@@ -432,58 +432,74 @@ class NoiseGenerator(nn.Module):
 
         return filtered
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+# Example usage    
+if __name__ == "__main__":
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-# Initialize DDSP engine
-ddsp_engine = DDSPTransformationEngine(
-    sample_rate=44100,
-    learnable_filters=True,
-    device=device
-)
+    # Initialize DDSP engine
+    ddsp_engine = DDSPTransformationEngine(
+        sample_rate=44100,
+        learnable_filters=True,
+        device=device
+    )
 
-# Create dummy audio and archetype weights
-batch_size = 2
-n_samples = 44100 * 2  # 2 seconds
+    # Generate proper audio waveforms (not random noise)
+    sample_rate = 44100
+    duration = 2.0
+    t = np.linspace(0, duration, int(sample_rate * duration))
 
-dummy_audio = torch.randn(batch_size, n_samples).to(device)
+    # Create a clean sine wave as input (440 Hz = A4 note)
+    original_audio = np.sin(2 * np.pi * 440 * t) * 0.5
 
-# Example: mostly sawtooth with some noise
-archetype_weights = torch.tensor([
-    [0.1, 0.1, 0.6, 0.1, 0.1],  # Bright sawtooth
-    [0.5, 0.1, 0.1, 0.2, 0.1]   # Smooth sine
-]).to(device)
+    # Convert to tensor
+    dummy_audio = torch.from_numpy(original_audio).unsqueeze(0).float().to(device)
 
-print("=== Testing DDSP Transformation ===")
-print(f"Input audio shape: {dummy_audio.shape}")
-print(f"Archetype weights:\n{archetype_weights}")
+    # Define archetype weights
+    # Example 1: Mostly sawtooth (bright)
+    archetype_weights_bright = torch.tensor([
+        [0.1, 0.1, 0.6, 0.1, 0.1]  # High sawtooth
+    ]).to(device)
 
-# Transform audio
-transformed = ddsp_engine(dummy_audio, archetype_weights)
+    # Example 2: Mostly sine (smooth)
+    archetype_weights_smooth = torch.tensor([
+        [0.6, 0.1, 0.1, 0.2, 0.0]  # High sine
+    ]).to(device)
 
-print(f"\nTransformed audio shape: {transformed.shape}")
-print(f"Input RMS: {dummy_audio.pow(2).mean().sqrt().item():.4f}")
-print(f"Output RMS: {transformed.pow(2).mean().sqrt().item():.4f}")
+    import IPython.display as ipd
+    from IPython.display import display, HTML
 
-# Audio playback -- compare original and transformed
-import IPython.display as ipd
-from IPython.display import display, HTML
+    print("=== Testing DDSP Transformation with Real Audio ===")
+    print(f"Input: Clean sine wave at 440 Hz")
 
-# Display original audio
-print("\n▶️  ORIGINAL AUDIO:")
-display(ipd.Audio(dummy_audio, rate=44100, autoplay=False))
+    # Transform with different archetype weights
+    print("\n--- Transformation 1: Make it BRIGHT (sawtooth) ---")
+    transformed_bright = ddsp_engine(dummy_audio, archetype_weights_bright)
 
-# Display transformed audio
-print("\n▶️  TRANSFORMED AUDIO:")
-display(ipd.Audio(transformed, rate=44100, autoplay=False))
+    print("\n▶️  ORIGINAL AUDIO (Sine Wave):")
+    display(ipd.Audio(dummy_audio.detach().cpu().numpy(), rate=44100, autoplay=False))
 
-# Test noise generator
-print("\n=== Testing Noise Generator ===")
-noise_gen = NoiseGenerator(device=device)
+    print("\n▶️  TRANSFORMED AUDIO (Bright Sawtooth):")
+    display(ipd.Audio(transformed_bright.detach().cpu().numpy(), rate=44100, autoplay=False))
 
-white_noise = noise_gen.generate(44100, batch_size=1, color='white')
-pink_noise = noise_gen.generate(44100, batch_size=1, color='pink')
-brown_noise = noise_gen.generate(44100, batch_size=1, color='brown')
+    print("\n--- Transformation 2: Make it SMOOTH (more sine) ---")
+    transformed_smooth = ddsp_engine(dummy_audio, archetype_weights_smooth)
 
-print(f"White noise RMS: {white_noise.pow(2).mean().sqrt().item():.4f}")
-print(f"Pink noise RMS: {pink_noise.pow(2).mean().sqrt().item():.4f}")
-print(f"Brown noise RMS: {brown_noise.pow(2).mean().sqrt().item():.4f}")
+    print("\n▶️  TRANSFORMED AUDIO (Smooth Sine):")
+    display(ipd.Audio(transformed_smooth.detach().cpu().numpy(), rate=44100, autoplay=False))
+
+    # Show RMS comparison
+    print(f"\nOriginal RMS: {dummy_audio.pow(2).mean().sqrt().item():.4f}")
+    print(f"Transformed (bright) RMS: {transformed_bright.pow(2).mean().sqrt().item():.4f}")
+    print(f"Transformed (smooth) RMS: {transformed_smooth.pow(2).mean().sqrt().item():.4f}")
+
+    # Test noise generator
+    print("\n=== Testing Noise Generator ===")
+    noise_gen = NoiseGenerator(device=device)
+
+    white_noise = noise_gen.generate(44100, batch_size=1, color='white')
+    pink_noise = noise_gen.generate(44100, batch_size=1, color='pink')
+    brown_noise = noise_gen.generate(44100, batch_size=1, color='brown')
+
+    print(f"White noise RMS: {white_noise.pow(2).mean().sqrt().item():.4f}")
+    print(f"Pink noise RMS: {pink_noise.pow(2).mean().sqrt().item():.4f}")
+    print(f"Brown noise RMS: {brown_noise.pow(2).mean().sqrt().item():.4f}")

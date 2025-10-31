@@ -70,6 +70,9 @@ class TextEncoder(nn.Module):
                 convert_to_tensor=True,
                 device=self.device
             )
+
+        # Clone to make it a normal tensor for autograd
+        base_embeddings = base_embeddings.clone().detach().requires_grad_(True)
         
         # Project to target dimension
         embeddings = self.projection(base_embeddings)
