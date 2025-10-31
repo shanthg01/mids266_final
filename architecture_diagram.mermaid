@@ -1,0 +1,56 @@
+graph LR
+  %% Left Tower: Text Processing
+  subgraph Text_Tower["Text Tower (NLP Encoder)"]
+    A1["Text Input (description)"]
+    A2["Sentence Transformer\n(BERT Encoder)"]
+    A3["Text Embedding (d_t)"]
+    A1 --> A2 --> A3
+  end
+
+  %% Right Tower: Audio Processing
+  subgraph Audio_Tower["Audio Tower (Audio Encoder)"]
+    B1["Audio Input (WAV / Spectrogram)"]
+    B2["Spectrogram Extraction"]
+    B3["Audio Encoder\n(ResNet / AST)"]
+    B4["Audio Embedding (d_a)"]
+    B1 --> B2 --> B3 --> B4
+  end
+
+  %% Contrastive Alignment and Fusion
+  subgraph Fusion["Contrastive Alignment & Fusion"]
+    C1["Contrastive Loss\n& Match Classifier"]
+    C2["Joint Embedding Fusion (MLP)"]
+    C3["Archetype Mixture\nPrediction Head (Softmax 5D)"]
+    C1 --> C2 --> C3
+  end
+
+  %% DSP Synthesis Engine
+  subgraph DSP["Audio Transformation Engine\n(DDSP Synthesizer)"]
+    D1["Differentiable DSP & Harmonic Synthesis"]
+    D1 --> D2["Output\nTransformed Audio"]
+  end
+
+  %% Feedback Loop
+  subgraph Feedback["Adaptive Learning & Feedback"]
+    F1["User Feedback\n(Ratings & Corrections)"]
+    F2["Synonym\nLearner"]
+    F3["RLHF Fine-tuning"]
+  end
+
+  %% Connections
+  A3 -- "Text Embedding →" --> C1
+  B4 -- "Audio Embedding →" --> C1
+
+  C3 -- "Predicted Archetype Weights →" --> D1
+  D2 -- "Output Audio →" --> F1
+
+  F1 --> F2
+  F2 --> C3
+  F1 --> F3
+  F3 --> C2
+
+  style Text_Tower fill:#9cd9ff,stroke:#333,stroke-width:2px
+  style Audio_Tower fill:#a6f0a6,stroke:#333,stroke-width:2px
+  style Fusion fill:#ffcc80,stroke:#333,stroke-width:2px
+  style DSP fill:#ff9999,stroke:#333,stroke-width:2px
+  style Feedback fill:#cfcfff,stroke:#333,stroke-width:2px
