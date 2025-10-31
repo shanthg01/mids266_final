@@ -1,0 +1,21 @@
+# Ignore specific subdirectories under scripts/
+scripts/musiccaps_audio/
+scripts/checkpoints/
+
+# Ignore test results
+scripts/evaluation_results_comparison.csv
+scripts/evaluation_results.csv
+scripts/musiccaps_training_data_test.npz
+scripts/musiccaps_training_data_train.npz
+scripts/musiccaps_training_data_val.npz
+scripts/test_results.csv
+
+# (optional) Ignore all Python cache folders anywhere in repo
+__pycache__/
+
+# (optional) Ignore compiled files
+*.pyc
+
+# (optional) Ignore virtual environments if they exist
+venv/
+.env/
