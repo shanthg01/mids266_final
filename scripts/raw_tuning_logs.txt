@@ -1,0 +1,1443 @@
+================================================================================
+STARTING HYPERPARAMETER SEARCH
+================================================================================
+Total configurations: 7
+Device: cpu
+================================================================================
+
+
+################################################################################
+Configuration 1/7
+################################################################################
+
+
+======================================================================
+Configuration: classical_baseline_small
+======================================================================
+  Embedding dim: 512
+  Architecture: resnet
+  Batch size: 32
+  Learning rate: 0.0001
+  Epochs: 15
+  Quantum attention: False
+  Dropout rate: 0.1
+======================================================================
+
+Initializing model...
+Loading text encoder: sentence-transformers/all-MiniLM-L6-v2
+Model parameters: 36,055,564
+Creating training pipeline...
+Training pipeline initialized:
+  Training samples: 333
+  Validation samples: 71
+  Batch size: 32
+  Total epochs: 15
+  Steps per epoch: 11
+Starting training...
+
+============================================================
+Epoch 1/15
+============================================================
+/Users/shanthgopalswamy/Desktop/mids266_final/.venv/lib/python3.11/site-packages/torch/utils/data/dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+Epoch 0, Batch 0/11: Loss=2.4636, Contrastive=3.4824, Archetype=0.0893
+Epoch 0, Batch 10/11: Loss=1.7976, Contrastive=2.5348, Archetype=0.0776
+
+Train Losses: {'total': np.float64(2.3925697044892744), 'contrastive': np.float64(3.3749203248457476), 'archetype': np.float64(0.10373613035137003)}
+/Users/shanthgopalswamy/Desktop/mids266_final/.venv/lib/python3.11/site-packages/torch/utils/data/dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+Val Losses: {'total': 2.130974849065145, 'contrastive': 3.0000675519307456, 'archetype': 0.10519582778215408}
+Checkpoint saved to tuning_checkpoints/classical_baseline_small/best_model.pth
+✓ Best model saved (val_loss: 2.1310)
+
+============================================================
+Epoch 2/15
+============================================================
+Epoch 1, Batch 0/11: Loss=2.4006, Contrastive=3.3810, Archetype=0.1159
+Epoch 1, Batch 10/11: Loss=1.6049, Contrastive=2.2565, Archetype=0.0846
+
+Train Losses: {'total': np.float64(2.271017453887246), 'contrastive': np.float64(3.202026692303744), 'archetype': np.float64(0.10148183459585364)}
+Val Losses: {'total': 2.119427720705668, 'contrastive': 2.982790946960449, 'archetype': 0.10829959809780121}
+Checkpoint saved to tuning_checkpoints/classical_baseline_small/best_model.pth
+✓ Best model saved (val_loss: 2.1194)
+
+============================================================
+Epoch 3/15
+============================================================
+Epoch 2, Batch 0/11: Loss=2.2253, Contrastive=3.1391, Archetype=0.0927
+Epoch 2, Batch 10/11: Loss=1.4247, Contrastive=1.9829, Archetype=0.1313
+
+Train Losses: {'total': np.float64(2.0994899706407026), 'contrastive': np.float64(2.9573135267604482), 'archetype': np.float64(0.10013118318536064)}
+Val Losses: {'total': 2.106614033381144, 'contrastive': 2.964064836502075, 'archetype': 0.11002133041620255}
+Checkpoint saved to tuning_checkpoints/classical_baseline_small/best_model.pth
+✓ Best model saved (val_loss: 2.1066)
+
+============================================================
+Epoch 4/15
+============================================================
+Epoch 3, Batch 0/11: Loss=2.0605, Contrastive=2.9107, Archetype=0.0776
+Epoch 3, Batch 10/11: Loss=1.4018, Contrastive=1.9539, Archetype=0.1224
+
+Train Losses: {'total': np.float64(1.8317531455646863), 'contrastive': np.float64(2.5753586942499336), 'archetype': np.float64(0.09855535558678886)}
+Val Losses: {'total': 2.1440399885177612, 'contrastive': 3.0176543394724527, 'archetype': 0.10936908423900604}
+
+============================================================
+Epoch 5/15
+============================================================
+Epoch 4, Batch 0/11: Loss=1.6367, Contrastive=2.2932, Archetype=0.1070
+Epoch 4, Batch 10/11: Loss=0.8812, Contrastive=1.2203, Archetype=0.0893
+
+Train Losses: {'total': np.float64(1.4345324310389431), 'contrastive': np.float64(2.0093395709991455), 'archetype': np.float64(0.09288416531952945)}
+Val Losses: {'total': 2.0964940786361694, 'contrastive': 2.950089454650879, 'archetype': 0.10757321367661159}
+Checkpoint saved to tuning_checkpoints/classical_baseline_small/best_model.pth
+✓ Best model saved (val_loss: 2.0965)
+
+============================================================
+Epoch 6/15
+============================================================
+Epoch 5, Batch 0/11: Loss=1.1797, Contrastive=1.6456, Archetype=0.0915
+Epoch 5, Batch 10/11: Loss=0.6951, Contrastive=0.9556, Archetype=0.0866
+
+Train Losses: {'total': np.float64(1.1337165940891614), 'contrastive': np.float64(1.5794967087832363), 'archetype': np.float64(0.09304798529906706)}
+Val Losses: {'total': 2.008143583933512, 'contrastive': 2.8248494466145835, 'archetype': 0.10431654502948125}
+Checkpoint saved to tuning_checkpoints/classical_baseline_small/best_model.pth
+✓ Best model saved (val_loss: 2.0081)
+
+============================================================
+Epoch 7/15
+============================================================
+Epoch 6, Batch 0/11: Loss=0.9898, Contrastive=1.3752, Archetype=0.0892
+Epoch 6, Batch 10/11: Loss=0.4417, Contrastive=0.5977, Archetype=0.0786
+
+Train Losses: {'total': np.float64(0.8160088116472418), 'contrastive': np.float64(1.127634812485088), 'archetype': np.float64(0.0868598608808084)}
+Val Losses: {'total': 2.1523470083872476, 'contrastive': 3.0316431522369385, 'archetype': 0.10182145982980728}
+
+============================================================
+Epoch 8/15
+============================================================
+Epoch 7, Batch 0/11: Loss=0.7601, Contrastive=1.0448, Archetype=0.0964
+Epoch 7, Batch 10/11: Loss=0.3011, Contrastive=0.4000, Archetype=0.0706
+
+Train Losses: {'total': np.float64(0.5921375182541934), 'contrastive': np.float64(0.8087479147044095), 'archetype': np.float64(0.08392531966621225)}
+Val Losses: {'total': 2.322590390841166, 'contrastive': 3.2767704327901206, 'archetype': 0.0952480932076772}
+
+============================================================
+Epoch 9/15
+============================================================
+Epoch 8, Batch 0/11: Loss=0.4911, Contrastive=0.6563, Archetype=0.1038
+Epoch 8, Batch 10/11: Loss=0.2467, Contrastive=0.3106, Archetype=0.0978
+
+Train Losses: {'total': np.float64(0.4262188835577531), 'contrastive': np.float64(0.5707837234843861), 'archetype': np.float64(0.08651981705969031)}
+Val Losses: {'total': 2.361705263455709, 'contrastive': 3.33487606048584, 'archetype': 0.08748985826969147}
+
+============================================================
+Epoch 10/15
+============================================================
+Epoch 9, Batch 0/11: Loss=0.3804, Contrastive=0.5104, Archetype=0.0733
+Epoch 9, Batch 10/11: Loss=0.2246, Contrastive=0.2846, Archetype=0.0799
+
+Train Losses: {'total': np.float64(0.3584259369156577), 'contrastive': np.float64(0.47454833713444794), 'archetype': np.float64(0.08445326848463579)}
+Val Losses: {'total': 2.3680077393849692, 'contrastive': 3.3431291580200195, 'archetype': 0.09007114917039871}
+Checkpoint saved to tuning_checkpoints/classical_baseline_small/checkpoint_epoch_10.pth
+
+============================================================
+Epoch 11/15
+============================================================
+Epoch 10, Batch 0/11: Loss=0.3288, Contrastive=0.4388, Archetype=0.0700
+Epoch 10, Batch 10/11: Loss=0.1492, Contrastive=0.1776, Archetype=0.0827
+
+Train Losses: {'total': np.float64(0.30322532897645776), 'contrastive': np.float64(0.3961707285859368), 'archetype': np.float64(0.08315153149041263)}
+Val Losses: {'total': 2.2778913577397666, 'contrastive': 3.2132185300191245, 'archetype': 0.09436309585968654}
+
+============================================================
+Epoch 12/15
+============================================================
+Epoch 11, Batch 0/11: Loss=0.2551, Contrastive=0.3359, Archetype=0.0636
+Epoch 11, Batch 10/11: Loss=0.1188, Contrastive=0.1314, Archetype=0.0893
+
+Train Losses: {'total': np.float64(0.30791950632225384), 'contrastive': np.float64(0.403548773039471), 'archetype': np.float64(0.08081605149941011)}
+Val Losses: {'total': 2.393940488497416, 'contrastive': 3.379514773686727, 'archetype': 0.09284558395544688}
+
+============================================================
+Epoch 13/15
+============================================================
+Epoch 12, Batch 0/11: Loss=0.2735, Contrastive=0.3578, Archetype=0.0700
+Epoch 12, Batch 10/11: Loss=0.0900, Contrastive=0.0912, Archetype=0.0784
+
+Train Losses: {'total': np.float64(0.2567341442812573), 'contrastive': np.float64(0.33131166073408996), 'archetype': np.float64(0.07738630676811392)}
+Val Losses: {'total': 2.2135876019795737, 'contrastive': 3.1233365535736084, 'archetype': 0.0878450945019722}
+
+============================================================
+Epoch 14/15
+============================================================
+Epoch 13, Batch 0/11: Loss=0.1744, Contrastive=0.2172, Archetype=0.0710
+Epoch 13, Batch 10/11: Loss=0.0905, Contrastive=0.1053, Archetype=0.0556
+
+Train Losses: {'total': np.float64(0.21321167796850204), 'contrastive': np.float64(0.27011161094362085), 'archetype': np.float64(0.07548436895012856)}
+Val Losses: {'total': 2.1195135911305747, 'contrastive': 2.985845446586609, 'archetype': 0.09863852709531784}
+
+============================================================
+Epoch 15/15
+============================================================
+Epoch 14, Batch 0/11: Loss=0.2092, Contrastive=0.2597, Archetype=0.0839
+Epoch 14, Batch 10/11: Loss=0.0864, Contrastive=0.0922, Archetype=0.0603
+
+Train Losses: {'total': np.float64(0.19971481439742175), 'contrastive': np.float64(0.2516214034774087), 'archetype': np.float64(0.07178208299658516)}
+Val Losses: {'total': 2.2709697484970093, 'contrastive': 3.2022108236948648, 'archetype': 0.09884023418029149}
+
+============================================================
+Training complete!
+============================================================
+Checkpoint saved to tuning_checkpoints/classical_baseline_small/final_model.pth
+Training history plot saved to tuning_checkpoints/classical_baseline_small/training_history.png
+✓ Results saved to tuning_results/classical_baseline_small_20251127_135440.json
+
+======================================================================
+Training Summary: classical_baseline_small
+======================================================================
+Status: ✓ Success
+Training time: 32.12 minutes
+======================================================================
+
+
+################################################################################
+Configuration 2/7
+################################################################################
+
+
+======================================================================
+Configuration: classical_baseline_large
+======================================================================
+  Embedding dim: 768
+  Architecture: resnet
+  Batch size: 16
+  Learning rate: 5e-05
+  Epochs: 15
+  Quantum attention: False
+  Dropout rate: 0.2
+======================================================================
+
+Initializing model...
+Loading text encoder: sentence-transformers/all-MiniLM-L6-v2
+Model parameters: 37,203,724
+Creating training pipeline...
+Training pipeline initialized:
+  Training samples: 333
+  Validation samples: 71
+  Batch size: 16
+  Total epochs: 15
+  Steps per epoch: 21
+Starting training...
+
+============================================================
+Epoch 1/15
+============================================================
+Epoch 0, Batch 0/21: Loss=1.9738, Contrastive=2.7716, Archetype=0.1141
+Epoch 0, Batch 10/21: Loss=2.0046, Contrastive=2.8217, Archetype=0.1036
+Epoch 0, Batch 20/21: Loss=1.7669, Contrastive=2.4765, Archetype=0.1170
+
+Train Losses: {'total': np.float64(1.9517002900441487), 'contrastive': np.float64(2.7437734376816523), 'archetype': np.float64(0.10769434344200861)}
+Val Losses: {'total': 1.862559700012207, 'contrastive': 2.6187849283218383, 'archetype': 0.09966916292905807}
+Checkpoint saved to tuning_checkpoints/classical_baseline_large/best_model.pth
+✓ Best model saved (val_loss: 1.8626)
+
+============================================================
+Epoch 2/15
+============================================================
+Epoch 1, Batch 0/21: Loss=1.8879, Contrastive=2.6456, Archetype=0.1248
+Epoch 1, Batch 10/21: Loss=1.8303, Contrastive=2.5725, Archetype=0.0991
+Epoch 1, Batch 20/21: Loss=1.7071, Contrastive=2.3852, Archetype=0.1339
+
+Train Losses: {'total': np.float64(1.8499309505735124), 'contrastive': np.float64(2.600829851059687), 'archetype': np.float64(0.09976501549993243)}
+Val Losses: {'total': 1.8096330165863037, 'contrastive': 2.5431060075759886, 'archetype': 0.10052399784326553}
+Checkpoint saved to tuning_checkpoints/classical_baseline_large/best_model.pth
+✓ Best model saved (val_loss: 1.8096)
+
+============================================================
+Epoch 3/15
+============================================================
+Epoch 2, Batch 0/21: Loss=1.8569, Contrastive=2.6108, Archetype=0.0998
+Epoch 2, Batch 10/21: Loss=1.6995, Contrastive=2.3878, Archetype=0.0952
+Epoch 2, Batch 20/21: Loss=1.6508, Contrastive=2.3200, Archetype=0.0901
+
+Train Losses: {'total': np.float64(1.7208510750815982), 'contrastive': np.float64(2.417180787949335), 'archetype': np.float64(0.09770592656873521)}
+Val Losses: {'total': 1.7493993997573853, 'contrastive': 2.458553123474121, 'archetype': 0.09564482718706131}
+Checkpoint saved to tuning_checkpoints/classical_baseline_large/best_model.pth
+✓ Best model saved (val_loss: 1.7494)
+
+============================================================
+Epoch 4/15
+============================================================
+Epoch 3, Batch 0/21: Loss=1.6202, Contrastive=2.2767, Archetype=0.0888
+Epoch 3, Batch 10/21: Loss=1.5337, Contrastive=2.1442, Archetype=0.1095
+Epoch 3, Batch 20/21: Loss=1.2712, Contrastive=1.7741, Archetype=0.0999
+
+Train Losses: {'total': np.float64(1.497470078014192), 'contrastive': np.float64(2.0981249128069197), 'archetype': np.float64(0.09770684902157102)}
+Val Losses: {'total': 1.7447107791900636, 'contrastive': 2.453987550735474, 'archetype': 0.08821264654397964}
+Checkpoint saved to tuning_checkpoints/classical_baseline_large/best_model.pth
+✓ Best model saved (val_loss: 1.7447)
+
+============================================================
+Epoch 5/15
+============================================================
+Epoch 4, Batch 0/21: Loss=1.3956, Contrastive=1.9539, Archetype=0.0956
+Epoch 4, Batch 10/21: Loss=1.2412, Contrastive=1.7317, Archetype=0.0919
+Epoch 4, Batch 20/21: Loss=0.8665, Contrastive=1.1754, Archetype=0.1507
+
+Train Losses: {'total': np.float64(1.193602979183197), 'contrastive': np.float64(1.6648728166307722), 'archetype': np.float64(0.09432754630134219)}
+Val Losses: {'total': 1.7742630004882813, 'contrastive': 2.495957374572754, 'archetype': 0.08876348584890366}
+
+============================================================
+Epoch 6/15
+============================================================
+Epoch 5, Batch 0/21: Loss=0.8557, Contrastive=1.1809, Archetype=0.0968
+Epoch 5, Batch 10/21: Loss=0.8116, Contrastive=1.1158, Archetype=0.0966
+Epoch 5, Batch 20/21: Loss=0.7478, Contrastive=1.0153, Archetype=0.1207
+
+Train Losses: {'total': np.float64(0.8685787036305382), 'contrastive': np.float64(1.201639975820269), 'archetype': np.float64(0.08988686438117709)}
+Val Losses: {'total': 1.7712822675704956, 'contrastive': 2.4924651622772216, 'archetype': 0.08567471206188201}
+
+============================================================
+Epoch 7/15
+============================================================
+Epoch 6, Batch 0/21: Loss=0.7470, Contrastive=1.0368, Archetype=0.0641
+Epoch 6, Batch 10/21: Loss=0.8515, Contrastive=1.1793, Archetype=0.0847
+Epoch 6, Batch 20/21: Loss=0.5720, Contrastive=0.7901, Archetype=0.0632
+
+Train Losses: {'total': np.float64(0.650104025999705), 'contrastive': np.float64(0.8896349214372181), 'archetype': np.float64(0.08962655315796535)}
+Val Losses: {'total': 1.7870913743972778, 'contrastive': 2.5140902042388915, 'archetype': 0.08901335000991821}
+
+============================================================
+Epoch 8/15
+============================================================
+Epoch 7, Batch 0/21: Loss=0.5683, Contrastive=0.7744, Archetype=0.0773
+Epoch 7, Batch 10/21: Loss=0.4798, Contrastive=0.6572, Archetype=0.0593
+Epoch 7, Batch 20/21: Loss=0.2900, Contrastive=0.3722, Archetype=0.0953
+
+Train Losses: {'total': np.float64(0.46485254878089544), 'contrastive': np.float64(0.6248094964595068), 'archetype': np.float64(0.09015874351773943)}
+Val Losses: {'total': 1.85164053440094, 'contrastive': 2.605130910873413, 'archetype': 0.09310269504785537}
+
+============================================================
+Epoch 9/15
+============================================================
+Epoch 8, Batch 0/21: Loss=0.4633, Contrastive=0.6225, Archetype=0.0928
+Epoch 8, Batch 10/21: Loss=0.3109, Contrastive=0.4078, Archetype=0.0842
+Epoch 8, Batch 20/21: Loss=0.3758, Contrastive=0.4954, Archetype=0.0922
+
+Train Losses: {'total': np.float64(0.3936177903697604), 'contrastive': np.float64(0.5235408814180464), 'archetype': np.float64(0.08857205545618421)}
+Val Losses: {'total': 1.7923451900482177, 'contrastive': 2.5198338985443116, 'archetype': 0.0951683759689331}
+
+============================================================
+Epoch 10/15
+============================================================
+Epoch 9, Batch 0/21: Loss=0.4600, Contrastive=0.6243, Archetype=0.0767
+Epoch 9, Batch 10/21: Loss=0.2435, Contrastive=0.3077, Archetype=0.0911
+Epoch 9, Batch 20/21: Loss=0.4623, Contrastive=0.6303, Archetype=0.0655
+
+Train Losses: {'total': np.float64(0.3539807725520361), 'contrastive': np.float64(0.46724010081518264), 'archetype': np.float64(0.08762650990060397)}
+Val Losses: {'total': 1.8300875663757323, 'contrastive': 2.5750362873077393, 'archetype': 0.09087535738945007}
+Checkpoint saved to tuning_checkpoints/classical_baseline_large/checkpoint_epoch_10.pth
+
+============================================================
+Epoch 11/15
+============================================================
+Epoch 10, Batch 0/21: Loss=0.2774, Contrastive=0.3547, Archetype=0.0888
+Epoch 10, Batch 10/21: Loss=0.2670, Contrastive=0.3416, Archetype=0.0949
+Epoch 10, Batch 20/21: Loss=0.2403, Contrastive=0.2923, Archetype=0.1122
+
+Train Losses: {'total': np.float64(0.27427691008363453), 'contrastive': np.float64(0.3541915090311141), 'archetype': np.float64(0.0846167082587878)}
+Val Losses: {'total': 1.8337913751602173, 'contrastive': 2.5813244342803956, 'archetype': 0.08747282177209854}
+
+============================================================
+Epoch 12/15
+============================================================
+Epoch 11, Batch 0/21: Loss=0.1436, Contrastive=0.1615, Archetype=0.0991
+Epoch 11, Batch 10/21: Loss=0.4030, Contrastive=0.5364, Archetype=0.0871
+Epoch 11, Batch 20/21: Loss=0.1061, Contrastive=0.1233, Archetype=0.0626
+
+Train Losses: {'total': np.float64(0.23918197942631586), 'contrastive': np.float64(0.3055575099729356), 'archetype': np.float64(0.07982739912612098)}
+Val Losses: {'total': 1.7628001689910888, 'contrastive': 2.4781457424163817, 'archetype': 0.09364281296730041}
+
+============================================================
+Epoch 13/15
+============================================================
+Epoch 12, Batch 0/21: Loss=0.2210, Contrastive=0.2849, Archetype=0.0719
+Epoch 12, Batch 10/21: Loss=0.1940, Contrastive=0.2447, Archetype=0.0736
+Epoch 12, Batch 20/21: Loss=0.2414, Contrastive=0.3039, Archetype=0.0919
+
+Train Losses: {'total': np.float64(0.2370040395430156), 'contrastive': np.float64(0.3015489223457518), 'archetype': np.float64(0.08295731672218867)}
+Val Losses: {'total': 1.8256662607192993, 'contrastive': 2.5683850288391112, 'archetype': 0.09227517545223236}
+
+============================================================
+Epoch 14/15
+============================================================
+Epoch 13, Batch 0/21: Loss=0.1728, Contrastive=0.2035, Archetype=0.0956
+Epoch 13, Batch 10/21: Loss=0.1731, Contrastive=0.2164, Archetype=0.0636
+Epoch 13, Batch 20/21: Loss=0.1494, Contrastive=0.1802, Archetype=0.0745
+
+Train Losses: {'total': np.float64(0.20829793633449645), 'contrastive': np.float64(0.26248169087228324), 'archetype': np.float64(0.0764438013235728)}
+Val Losses: {'total': 1.8321811199188232, 'contrastive': 2.5785903453826906, 'archetype': 0.08917473405599594}
+
+============================================================
+Epoch 15/15
+============================================================
+Epoch 14, Batch 0/21: Loss=0.1933, Contrastive=0.2391, Archetype=0.0816
+Epoch 14, Batch 10/21: Loss=0.1939, Contrastive=0.2400, Archetype=0.0839
+Epoch 14, Batch 20/21: Loss=0.1418, Contrastive=0.1645, Archetype=0.0794
+
+Train Losses: {'total': np.float64(0.18831887060687655), 'contrastive': np.float64(0.2328870374531973), 'archetype': np.float64(0.08018364225115095)}
+Val Losses: {'total': 1.84753737449646, 'contrastive': 2.6003994941711426, 'archetype': 0.08990999311208725}
+
+============================================================
+Training complete!
+============================================================
+Checkpoint saved to tuning_checkpoints/classical_baseline_large/final_model.pth
+Training history plot saved to tuning_checkpoints/classical_baseline_large/training_history.png
+✓ Results saved to tuning_results/classical_baseline_large_20251127_142734.json
+
+======================================================================
+Training Summary: classical_baseline_large
+======================================================================
+Status: ✓ Success
+Training time: 32.87 minutes
+======================================================================
+
+
+################################################################################
+Configuration 3/7
+################################################################################
+
+
+======================================================================
+Configuration: classical_ast
+======================================================================
+  Embedding dim: 768
+  Architecture: ast
+  Batch size: 16
+  Learning rate: 0.0001
+  Epochs: 15
+  Quantum attention: False
+  Dropout rate: 0.15
+======================================================================
+
+Initializing model...
+Loading text encoder: sentence-transformers/all-MiniLM-L6-v2
+Model parameters: 68,426,252
+Creating training pipeline...
+Training pipeline initialized:
+  Training samples: 333
+  Validation samples: 71
+  Batch size: 16
+  Total epochs: 15
+  Steps per epoch: 21
+Starting training...
+
+============================================================
+Epoch 1/15
+============================================================
+Epoch 0, Batch 0/21: Loss=1.9788, Contrastive=2.7849, Archetype=0.1028
+Epoch 0, Batch 10/21: Loss=1.9869, Contrastive=2.7950, Archetype=0.1076
+Epoch 0, Batch 20/21: Loss=1.8367, Contrastive=2.5759, Archetype=0.1174
+
+Train Losses: {'total': np.float64(1.9688415357044764), 'contrastive': np.float64(2.768474442618234), 'archetype': np.float64(0.10764116545518239)}
+Val Losses: {'total': 1.8513365507125854, 'contrastive': 2.603637170791626, 'archetype': 0.09756097942590714}
+Checkpoint saved to tuning_checkpoints/classical_ast/best_model.pth
+✓ Best model saved (val_loss: 1.8513)
+
+============================================================
+Epoch 2/15
+============================================================
+Epoch 1, Batch 0/21: Loss=1.9532, Contrastive=2.7608, Archetype=0.0701
+Epoch 1, Batch 10/21: Loss=1.9789, Contrastive=2.7905, Archetype=0.0895
+Epoch 1, Batch 20/21: Loss=1.8753, Contrastive=2.6255, Archetype=0.1286
+
+Train Losses: {'total': np.float64(1.9508923121861048), 'contrastive': np.float64(2.7446900549389066), 'archetype': np.float64(0.10194856389647439)}
+Val Losses: {'total': 1.8467713356018067, 'contrastive': 2.5956708669662474, 'archetype': 0.10271614789962769}
+Checkpoint saved to tuning_checkpoints/classical_ast/best_model.pth
+✓ Best model saved (val_loss: 1.8468)
+
+============================================================
+Epoch 3/15
+============================================================
+Epoch 2, Batch 0/21: Loss=1.9752, Contrastive=2.7795, Archetype=0.0950
+Epoch 2, Batch 10/21: Loss=1.8626, Contrastive=2.6196, Archetype=0.0987
+Epoch 2, Batch 20/21: Loss=1.7888, Contrastive=2.5164, Archetype=0.0914
+
+Train Losses: {'total': np.float64(1.893110337711516), 'contrastive': np.float64(2.66374219031561), 'archetype': np.float64(0.09675572954473041)}
+Val Losses: {'total': 1.8015990495681762, 'contrastive': 2.5320676803588866, 'archetype': 0.09996337741613388}
+Checkpoint saved to tuning_checkpoints/classical_ast/best_model.pth
+✓ Best model saved (val_loss: 1.8016)
+
+============================================================
+Epoch 4/15
+============================================================
+Epoch 3, Batch 0/21: Loss=1.8939, Contrastive=2.6668, Archetype=0.0896
+Epoch 3, Batch 10/21: Loss=1.8532, Contrastive=2.6031, Archetype=0.1091
+Epoch 3, Batch 20/21: Loss=1.7424, Contrastive=2.4576, Archetype=0.0704
+
+Train Losses: {'total': np.float64(1.8549650453385853), 'contrastive': np.float64(2.60843555132548), 'archetype': np.float64(0.09974275068158195)}
+Val Losses: {'total': 1.8247287034988404, 'contrastive': 2.5677978515625, 'archetype': 0.09086067527532578}
+
+============================================================
+Epoch 5/15
+============================================================
+Epoch 4, Batch 0/21: Loss=1.8450, Contrastive=2.6005, Archetype=0.0859
+Epoch 4, Batch 10/21: Loss=1.8406, Contrastive=2.5824, Archetype=0.1140
+Epoch 4, Batch 20/21: Loss=1.7092, Contrastive=2.3966, Archetype=0.1092
+
+Train Losses: {'total': np.float64(1.824527002516247), 'contrastive': np.float64(2.5658379736400785), 'archetype': np.float64(0.0972884190934045)}
+Val Losses: {'total': 1.7739497184753419, 'contrastive': 2.4944056272506714, 'archetype': 0.09441109001636505}
+Checkpoint saved to tuning_checkpoints/classical_ast/best_model.pth
+✓ Best model saved (val_loss: 1.7739)
+
+============================================================
+Epoch 6/15
+============================================================
+Epoch 5, Batch 0/21: Loss=1.8145, Contrastive=2.5443, Archetype=0.1148
+Epoch 5, Batch 10/21: Loss=1.6480, Contrastive=2.3152, Archetype=0.0926
+Epoch 5, Batch 20/21: Loss=1.7699, Contrastive=2.4801, Archetype=0.1169
+
+Train Losses: {'total': np.float64(1.7238218557266962), 'contrastive': np.float64(2.423525503703526), 'archetype': np.float64(0.09185229206369036)}
+Val Losses: {'total': 1.7173596620559692, 'contrastive': 2.415200424194336, 'archetype': 0.08878790289163589}
+Checkpoint saved to tuning_checkpoints/classical_ast/best_model.pth
+✓ Best model saved (val_loss: 1.7174)
+
+============================================================
+Epoch 7/15
+============================================================
+Epoch 6, Batch 0/21: Loss=1.7425, Contrastive=2.4487, Archetype=0.0991
+Epoch 6, Batch 10/21: Loss=1.8573, Contrastive=2.6109, Archetype=0.0962
+Epoch 6, Batch 20/21: Loss=1.4281, Contrastive=1.9983, Archetype=0.0985
+
+Train Losses: {'total': np.float64(1.6671769789287023), 'contrastive': np.float64(2.343151580719721), 'archetype': np.float64(0.09035538225656464)}
+Val Losses: {'total': 1.714513397216797, 'contrastive': 2.412434434890747, 'archetype': 0.08473432809114456}
+Checkpoint saved to tuning_checkpoints/classical_ast/best_model.pth
+✓ Best model saved (val_loss: 1.7145)
+
+============================================================
+Epoch 8/15
+============================================================
+Epoch 7, Batch 0/21: Loss=1.4196, Contrastive=1.9888, Archetype=0.0884
+Epoch 7, Batch 10/21: Loss=1.4909, Contrastive=2.0936, Archetype=0.0862
+Epoch 7, Batch 20/21: Loss=1.4192, Contrastive=1.9839, Archetype=0.1031
+
+Train Losses: {'total': np.float64(1.5470346496218728), 'contrastive': np.float64(2.1714165608088174), 'archetype': np.float64(0.09102643103826613)}
+Val Losses: {'total': 1.7378853559494019, 'contrastive': 2.444375920295715, 'archetype': 0.08984131515026092}
+
+============================================================
+Epoch 9/15
+============================================================
+Epoch 8, Batch 0/21: Loss=1.5530, Contrastive=2.1760, Archetype=0.1024
+Epoch 8, Batch 10/21: Loss=1.6961, Contrastive=2.3830, Archetype=0.0923
+Epoch 8, Batch 20/21: Loss=1.5907, Contrastive=2.2251, Archetype=0.1130
+
+Train Losses: {'total': np.float64(1.485545033500308), 'contrastive': np.float64(2.0845642657507035), 'archetype': np.float64(0.08778142858119238)}
+Val Losses: {'total': 1.8086936950683594, 'contrastive': 2.544251585006714, 'archetype': 0.09369191974401474}
+
+============================================================
+Epoch 10/15
+============================================================
+Epoch 9, Batch 0/21: Loss=1.5050, Contrastive=2.1178, Archetype=0.0721
+Epoch 9, Batch 10/21: Loss=1.4780, Contrastive=2.0734, Archetype=0.0871
+Epoch 9, Batch 20/21: Loss=1.1130, Contrastive=1.5581, Archetype=0.0708
+
+Train Losses: {'total': np.float64(1.34176238377889), 'contrastive': np.float64(1.8786794117518835), 'archetype': np.float64(0.08963882816689354)}
+Val Losses: {'total': 1.7524157762527466, 'contrastive': 2.465132141113281, 'archetype': 0.08965571075677872}
+Checkpoint saved to tuning_checkpoints/classical_ast/checkpoint_epoch_10.pth
+
+============================================================
+Epoch 11/15
+============================================================
+Epoch 10, Batch 0/21: Loss=1.0531, Contrastive=1.4653, Archetype=0.0939
+Epoch 10, Batch 10/21: Loss=1.2834, Contrastive=1.7936, Archetype=0.0917
+Epoch 10, Batch 20/21: Loss=1.1621, Contrastive=1.6300, Archetype=0.0614
+
+Train Losses: {'total': np.float64(1.1974539274261111), 'contrastive': np.float64(1.6751971926007951), 'archetype': np.float64(0.08053824802239735)}
+Val Losses: {'total': 1.9639652490615844, 'contrastive': 2.7681644678115847, 'archetype': 0.08688163608312607}
+
+============================================================
+Epoch 12/15
+============================================================
+Epoch 11, Batch 0/21: Loss=1.1298, Contrastive=1.5714, Archetype=0.0988
+Epoch 11, Batch 10/21: Loss=1.2843, Contrastive=1.8047, Archetype=0.0663
+Epoch 11, Batch 20/21: Loss=1.0548, Contrastive=1.4774, Archetype=0.0636
+
+Train Losses: {'total': np.float64(1.084207778885251), 'contrastive': np.float64(1.5131852115903581), 'archetype': np.float64(0.08157450333237648)}
+Val Losses: {'total': 1.8698460340499878, 'contrastive': 2.6346227169036864, 'archetype': 0.08379080593585968}
+
+============================================================
+Epoch 13/15
+============================================================
+Epoch 12, Batch 0/21: Loss=0.9569, Contrastive=1.3311, Archetype=0.0845
+Epoch 12, Batch 10/21: Loss=0.9608, Contrastive=1.3348, Archetype=0.0810
+Epoch 12, Batch 20/21: Loss=0.8021, Contrastive=1.1152, Archetype=0.0725
+
+Train Losses: {'total': np.float64(0.9937027267047337), 'contrastive': np.float64(1.3843272243227278), 'archetype': np.float64(0.08020184366475969)}
+Val Losses: {'total': 1.9137656688690186, 'contrastive': 2.698873424530029, 'archetype': 0.07860186249017716}
+
+============================================================
+Epoch 14/15
+============================================================
+Epoch 13, Batch 0/21: Loss=0.9195, Contrastive=1.2829, Archetype=0.0679
+Epoch 13, Batch 10/21: Loss=0.6688, Contrastive=0.9194, Archetype=0.0843
+Epoch 13, Batch 20/21: Loss=0.9001, Contrastive=1.2508, Archetype=0.0834
+
+Train Losses: {'total': np.float64(0.8114320153281802), 'contrastive': np.float64(1.1256045216605777), 'archetype': np.float64(0.07453666343575432)}
+Val Losses: {'total': 2.101483607292175, 'contrastive': 2.966453695297241, 'archetype': 0.08074679672718048}
+
+============================================================
+Epoch 15/15
+============================================================
+Epoch 14, Batch 0/21: Loss=0.7697, Contrastive=1.0700, Archetype=0.0669
+Epoch 14, Batch 10/21: Loss=0.7328, Contrastive=1.0138, Archetype=0.0728
+Epoch 14, Batch 20/21: Loss=0.5494, Contrastive=0.7575, Archetype=0.0563
+
+Train Losses: {'total': np.float64(0.7028766756966001), 'contrastive': np.float64(0.9702629844347636), 'archetype': np.float64(0.07545155002957299)}
+Val Losses: {'total': 2.0272814989089967, 'contrastive': 2.8598023891448974, 'archetype': 0.08238764703273774}
+
+============================================================
+Training complete!
+============================================================
+Checkpoint saved to tuning_checkpoints/classical_ast/final_model.pth
+Training history plot saved to tuning_checkpoints/classical_ast/training_history.png
+✓ Results saved to tuning_results/classical_ast_20251127_150500.json
+
+======================================================================
+Training Summary: classical_ast
+======================================================================
+Status: ✓ Success
+Training time: 37.40 minutes
+======================================================================
+
+
+################################################################################
+Configuration 4/7
+################################################################################
+
+
+======================================================================
+Configuration: quantum_4qubit_depth2
+======================================================================
+  Embedding dim: 768
+  Architecture: resnet
+  Batch size: 16
+  Learning rate: 0.0001
+  Epochs: 15
+  Quantum attention: True
+  N qubits: 4
+  Circuit depth: 2
+  Dropout rate: 0.3
+  Noise strength: 0.1
+======================================================================
+
+Initializing model...
+Loading text encoder: sentence-transformers/all-MiniLM-L6-v2
+Model parameters: 37,801,233
+Creating training pipeline...
+Training pipeline initialized:
+  Training samples: 333
+  Validation samples: 71
+  Batch size: 16
+  Total epochs: 15
+  Steps per epoch: 21
+Starting training...
+
+============================================================
+Epoch 1/15
+============================================================
+Epoch 0, Batch 0/21: Loss=1.9746, Contrastive=2.7842, Archetype=0.0940
+Epoch 0, Batch 10/21: Loss=1.9543, Contrastive=2.7450, Archetype=0.1162
+Epoch 0, Batch 20/21: Loss=1.7862, Contrastive=2.4957, Archetype=0.1355
+
+Train Losses: {'total': np.float64(1.9698696931203206), 'contrastive': np.float64(2.7702242533365884), 'archetype': np.float64(0.10642993343727929)}
+Val Losses: {'total': 1.861417818069458, 'contrastive': 2.618065118789673, 'archetype': 0.09744504690170289}
+Checkpoint saved to tuning_checkpoints/quantum_4qubit_depth2/best_model.pth
+✓ Best model saved (val_loss: 1.8614)
+
+============================================================
+Epoch 2/15
+============================================================
+Epoch 1, Batch 0/21: Loss=1.9449, Contrastive=2.7267, Archetype=0.1284
+Epoch 1, Batch 10/21: Loss=1.9176, Contrastive=2.6981, Archetype=0.1022
+Epoch 1, Batch 20/21: Loss=1.7141, Contrastive=2.3891, Archetype=0.1498
+
+Train Losses: {'total': np.float64(1.8990752413159324), 'contrastive': np.float64(2.669357878821237), 'archetype': np.float64(0.10696352344183695)}
+Val Losses: {'total': 1.804354476928711, 'contrastive': 2.53664288520813, 'archetype': 0.09837133139371872}
+Checkpoint saved to tuning_checkpoints/quantum_4qubit_depth2/best_model.pth
+✓ Best model saved (val_loss: 1.8044)
+
+============================================================
+Epoch 3/15
+============================================================
+Epoch 2, Batch 0/21: Loss=1.8192, Contrastive=2.5553, Archetype=0.1093
+Epoch 2, Batch 10/21: Loss=1.8129, Contrastive=2.5494, Archetype=0.0947
+Epoch 2, Batch 20/21: Loss=1.7072, Contrastive=2.4007, Archetype=0.0911
+
+Train Losses: {'total': np.float64(1.8324940204620361), 'contrastive': np.float64(2.576129913330078), 'archetype': np.float64(0.1014453096403962)}
+Val Losses: {'total': 1.826818823814392, 'contrastive': 2.569855260848999, 'archetype': 0.09511041343212127}
+
+============================================================
+Epoch 4/15
+============================================================
+Epoch 3, Batch 0/21: Loss=1.8061, Contrastive=2.5381, Archetype=0.1017
+Epoch 3, Batch 10/21: Loss=1.8192, Contrastive=2.5537, Archetype=0.1122
+Epoch 3, Batch 20/21: Loss=1.4284, Contrastive=2.0066, Archetype=0.0856
+
+Train Losses: {'total': np.float64(1.7162620794205439), 'contrastive': np.float64(2.410643906820388), 'archetype': np.float64(0.10048937336319969)}
+Val Losses: {'total': 1.7570186376571655, 'contrastive': 2.4720685958862303, 'archetype': 0.08930033296346665}
+Checkpoint saved to tuning_checkpoints/quantum_4qubit_depth2/best_model.pth
+✓ Best model saved (val_loss: 1.7570)
+
+============================================================
+Epoch 5/15
+============================================================
+Epoch 4, Batch 0/21: Loss=1.5863, Contrastive=2.2170, Archetype=0.1158
+Epoch 4, Batch 10/21: Loss=1.5393, Contrastive=2.1548, Archetype=0.1077
+Epoch 4, Batch 20/21: Loss=1.3359, Contrastive=1.8597, Archetype=0.1201
+
+Train Losses: {'total': np.float64(1.5448953026816958), 'contrastive': np.float64(2.1672095514479137), 'archetype': np.float64(0.09602015642892747)}
+Val Losses: {'total': 1.8798912525177003, 'contrastive': 2.647779130935669, 'archetype': 0.08853417634963989}
+
+============================================================
+Epoch 6/15
+============================================================
+Epoch 5, Batch 0/21: Loss=1.3611, Contrastive=1.9036, Archetype=0.0939
+Epoch 5, Batch 10/21: Loss=1.3878, Contrastive=1.9482, Archetype=0.0796
+Epoch 5, Batch 20/21: Loss=1.2229, Contrastive=1.6998, Archetype=0.1112
+
+Train Losses: {'total': np.float64(1.3448982352302188), 'contrastive': np.float64(1.8827509255636306), 'archetype': np.float64(0.09159958859284718)}
+Val Losses: {'total': 1.8898515939712524, 'contrastive': 2.6626296043395996, 'archetype': 0.08655164390802383}
+
+============================================================
+Epoch 7/15
+============================================================
+Epoch 6, Batch 0/21: Loss=1.1358, Contrastive=1.5848, Archetype=0.0857
+Epoch 6, Batch 10/21: Loss=1.0825, Contrastive=1.5062, Archetype=0.0948
+Epoch 6, Batch 20/21: Loss=1.2372, Contrastive=1.7213, Archetype=0.1117
+
+Train Losses: {'total': np.float64(1.0812135054951622), 'contrastive': np.float64(1.5066317263103666), 'archetype': np.float64(0.0890710371590796)}
+Val Losses: {'total': 2.009438467025757, 'contrastive': 2.8339784145355225, 'archetype': 0.0842044934630394}
+
+============================================================
+Epoch 8/15
+============================================================
+Epoch 7, Batch 0/21: Loss=1.0226, Contrastive=1.4118, Archetype=0.1205
+Epoch 7, Batch 10/21: Loss=0.8613, Contrastive=1.1861, Archetype=0.1003
+Epoch 7, Batch 20/21: Loss=0.7453, Contrastive=1.0226, Archetype=0.0879
+
+Train Losses: {'total': np.float64(0.8901462838763282), 'contrastive': np.float64(1.234044605777377), 'archetype': np.float64(0.0867869398068814)}
+Val Losses: {'total': 1.9979659080505372, 'contrastive': 2.8186152458190916, 'archetype': 0.08050651103258133}
+
+============================================================
+Epoch 9/15
+============================================================
+Epoch 8, Batch 0/21: Loss=0.7426, Contrastive=1.0144, Archetype=0.1044
+Epoch 8, Batch 10/21: Loss=0.6236, Contrastive=0.8592, Archetype=0.0704
+Epoch 8, Batch 20/21: Loss=0.6701, Contrastive=0.9144, Archetype=0.0972
+
+Train Losses: {'total': np.float64(0.67805405883562), 'contrastive': np.float64(0.9326962715103513), 'archetype': np.float64(0.08131423273256846)}
+Val Losses: {'total': 2.2119972944259643, 'contrastive': 3.124423360824585, 'archetype': 0.07995439320802689}
+
+============================================================
+Epoch 10/15
+============================================================
+Epoch 9, Batch 0/21: Loss=0.4890, Contrastive=0.6582, Archetype=0.0909
+Epoch 9, Batch 10/21: Loss=0.3964, Contrastive=0.5312, Archetype=0.0730
+Epoch 9, Batch 20/21: Loss=0.5475, Contrastive=0.7499, Archetype=0.0746
+
+Train Losses: {'total': np.float64(0.5414169771330697), 'contrastive': np.float64(0.7375598493076506), 'archetype': np.float64(0.08111854802284922)}
+Val Losses: {'total': 2.136878561973572, 'contrastive': 3.015297222137451, 'archetype': 0.08594857603311538}
+Checkpoint saved to tuning_checkpoints/quantum_4qubit_depth2/checkpoint_epoch_10.pth
+
+============================================================
+Epoch 11/15
+============================================================
+Epoch 10, Batch 0/21: Loss=0.3573, Contrastive=0.4744, Archetype=0.0832
+Epoch 10, Batch 10/21: Loss=0.3823, Contrastive=0.5107, Archetype=0.0803
+Epoch 10, Batch 20/21: Loss=0.3686, Contrastive=0.4863, Archetype=0.0961
+
+Train Losses: {'total': np.float64(0.3868050532681601), 'contrastive': np.float64(0.5166940376872108), 'archetype': np.float64(0.08133836853362265)}
+Val Losses: {'total': 2.295588731765747, 'contrastive': 3.244065999984741, 'archetype': 0.07993113100528718}
+
+============================================================
+Epoch 12/15
+============================================================
+Epoch 11, Batch 0/21: Loss=0.4240, Contrastive=0.5659, Archetype=0.0908
+Epoch 11, Batch 10/21: Loss=0.1756, Contrastive=0.2209, Archetype=0.0697
+Epoch 11, Batch 20/21: Loss=0.5152, Contrastive=0.7007, Archetype=0.0720
+
+Train Losses: {'total': np.float64(0.3512775890883945), 'contrastive': np.float64(0.46656366118362974), 'archetype': np.float64(0.07951596201885314)}
+Val Losses: {'total': 2.0962725400924684, 'contrastive': 2.9595279693603516, 'archetype': 0.07970564812421799}
+
+============================================================
+Epoch 13/15
+============================================================
+Epoch 12, Batch 0/21: Loss=0.2863, Contrastive=0.3700, Archetype=0.0945
+Epoch 12, Batch 10/21: Loss=0.2126, Contrastive=0.2612, Archetype=0.1014
+Epoch 12, Batch 20/21: Loss=0.3937, Contrastive=0.5268, Archetype=0.0892
+
+Train Losses: {'total': np.float64(0.30742907453150975), 'contrastive': np.float64(0.40424848596254986), 'archetype': np.float64(0.07936094506155877)}
+Val Losses: {'total': 2.0320448160171507, 'contrastive': 2.864314556121826, 'archetype': 0.08999297022819519}
+
+============================================================
+Epoch 14/15
+============================================================
+Epoch 13, Batch 0/21: Loss=0.1843, Contrastive=0.2298, Archetype=0.0813
+Epoch 13, Batch 10/21: Loss=0.3567, Contrastive=0.4804, Archetype=0.0642
+Epoch 13, Batch 20/21: Loss=0.1516, Contrastive=0.1779, Archetype=0.0827
+
+Train Losses: {'total': np.float64(0.27893295671258655), 'contrastive': np.float64(0.36482316965148565), 'archetype': np.float64(0.07502983244402069)}
+Val Losses: {'total': 2.1840298891067507, 'contrastive': 3.082868766784668, 'archetype': 0.08721711933612823}
+
+============================================================
+Epoch 15/15
+============================================================
+Epoch 14, Batch 0/21: Loss=0.2533, Contrastive=0.3348, Archetype=0.0595
+Epoch 14, Batch 10/21: Loss=0.2316, Contrastive=0.3043, Archetype=0.0630
+Epoch 14, Batch 20/21: Loss=0.3312, Contrastive=0.4393, Archetype=0.0711
+
+Train Losses: {'total': np.float64(0.24217787491423742), 'contrastive': np.float64(0.3135544877676737), 'archetype': np.float64(0.07125231481733776)}
+Val Losses: {'total': 2.0277586698532106, 'contrastive': 2.861433982849121, 'archetype': 0.08193896114826202}
+
+============================================================
+Training complete!
+============================================================
+Checkpoint saved to tuning_checkpoints/quantum_4qubit_depth2/final_model.pth
+Training history plot saved to tuning_checkpoints/quantum_4qubit_depth2/training_history.png
+✓ Results saved to tuning_results/quantum_4qubit_depth2_20251127_153938.json
+
+======================================================================
+Training Summary: quantum_4qubit_depth2
+======================================================================
+Status: ✓ Success
+Training time: 34.61 minutes
+======================================================================
+
+
+################################################################################
+Configuration 5/7
+################################################################################
+
+
+======================================================================
+Configuration: quantum_6qubit_depth2
+======================================================================
+  Embedding dim: 768
+  Architecture: resnet
+  Batch size: 16
+  Learning rate: 0.0001
+  Epochs: 15
+  Quantum attention: True
+  N qubits: 6
+  Circuit depth: 2
+  Dropout rate: 0.3
+  Noise strength: 0.1
+======================================================================
+
+Initializing model...
+Loading text encoder: sentence-transformers/all-MiniLM-L6-v2
+Model parameters: 37,802,771
+Creating training pipeline...
+Training pipeline initialized:
+  Training samples: 333
+  Validation samples: 71
+  Batch size: 16
+  Total epochs: 15
+  Steps per epoch: 21
+Starting training...
+
+============================================================
+Epoch 1/15
+============================================================
+Epoch 0, Batch 0/21: Loss=1.9799, Contrastive=2.7922, Archetype=0.0864
+Epoch 0, Batch 10/21: Loss=2.0496, Contrastive=2.8896, Archetype=0.0929
+Epoch 0, Batch 20/21: Loss=1.8502, Contrastive=2.5909, Archetype=0.1285
+
+Train Losses: {'total': np.float64(1.9800780273619152), 'contrastive': np.float64(2.7851804324558804), 'archetype': np.float64(0.10450491309165955)}
+Val Losses: {'total': 1.854943037033081, 'contrastive': 2.6096327781677244, 'archetype': 0.09381760656833649}
+Checkpoint saved to tuning_checkpoints/quantum_6qubit_depth2/best_model.pth
+✓ Best model saved (val_loss: 1.8549)
+
+============================================================
+Epoch 2/15
+============================================================
+Epoch 1, Batch 0/21: Loss=1.9838, Contrastive=2.7945, Archetype=0.0978
+Epoch 1, Batch 10/21: Loss=1.9257, Contrastive=2.7066, Archetype=0.1076
+Epoch 1, Batch 20/21: Loss=1.7189, Contrastive=2.4176, Archetype=0.0848
+
+Train Losses: {'total': np.float64(1.9123499109631492), 'contrastive': np.float64(2.6897793724423362), 'archetype': np.float64(0.10119137700114932)}
+Val Losses: {'total': 1.8041556835174561, 'contrastive': 2.537448191642761, 'archetype': 0.09385220110416412}
+Checkpoint saved to tuning_checkpoints/quantum_6qubit_depth2/best_model.pth
+✓ Best model saved (val_loss: 1.8042)
+
+============================================================
+Epoch 3/15
+============================================================
+Epoch 2, Batch 0/21: Loss=1.7968, Contrastive=2.5327, Archetype=0.0811
+Epoch 2, Batch 10/21: Loss=1.8298, Contrastive=2.5697, Archetype=0.1068
+Epoch 2, Batch 20/21: Loss=1.7272, Contrastive=2.4148, Archetype=0.1315
+
+Train Losses: {'total': np.float64(1.834132234255473), 'contrastive': np.float64(2.578266586576189), 'archetype': np.float64(0.10151489824056625)}
+Val Losses: {'total': 1.7501721382141113, 'contrastive': 2.4622708320617677, 'archetype': 0.08790438622236252}
+Checkpoint saved to tuning_checkpoints/quantum_6qubit_depth2/best_model.pth
+✓ Best model saved (val_loss: 1.7502)
+
+============================================================
+Epoch 4/15
+============================================================
+Epoch 3, Batch 0/21: Loss=1.7981, Contrastive=2.5256, Archetype=0.1073
+Epoch 3, Batch 10/21: Loss=1.7103, Contrastive=2.3934, Archetype=0.1192
+Epoch 3, Batch 20/21: Loss=1.6433, Contrastive=2.3087, Archetype=0.0917
+
+Train Losses: {'total': np.float64(1.7263731218519665), 'contrastive': np.float64(2.4259793758392334), 'archetype': np.float64(0.09669868559354827)}
+Val Losses: {'total': 1.7767284154891967, 'contrastive': 2.500766944885254, 'archetype': 0.0866290345788002}
+
+============================================================
+Epoch 5/15
+============================================================
+Epoch 4, Batch 0/21: Loss=1.5494, Contrastive=2.1787, Archetype=0.0829
+Epoch 4, Batch 10/21: Loss=1.5395, Contrastive=2.1577, Archetype=0.1004
+Epoch 4, Batch 20/21: Loss=1.4480, Contrastive=2.0199, Archetype=0.1138
+
+Train Losses: {'total': np.float64(1.516646493048895), 'contrastive': np.float64(2.1267343021574474), 'archetype': np.float64(0.09571367466733569)}
+Val Losses: {'total': 1.7451375484466554, 'contrastive': 2.45640606880188, 'archetype': 0.08396226316690444}
+Checkpoint saved to tuning_checkpoints/quantum_6qubit_depth2/best_model.pth
+✓ Best model saved (val_loss: 1.7451)
+
+============================================================
+Epoch 6/15
+============================================================
+Epoch 5, Batch 0/21: Loss=1.5480, Contrastive=2.1603, Archetype=0.1243
+Epoch 5, Batch 10/21: Loss=1.3186, Contrastive=1.8506, Archetype=0.0777
+Epoch 5, Batch 20/21: Loss=1.0998, Contrastive=1.5298, Archetype=0.0974
+
+Train Losses: {'total': np.float64(1.2764462402888708), 'contrastive': np.float64(1.7849788381939842), 'archetype': np.float64(0.09023486219701313)}
+Val Losses: {'total': 1.830230164527893, 'contrastive': 2.573368501663208, 'archetype': 0.0986711248755455}
+
+============================================================
+Epoch 7/15
+============================================================
+Epoch 6, Batch 0/21: Loss=1.0429, Contrastive=1.4608, Archetype=0.0673
+Epoch 6, Batch 10/21: Loss=0.9866, Contrastive=1.3734, Archetype=0.0762
+Epoch 6, Batch 20/21: Loss=1.0029, Contrastive=1.3954, Archetype=0.0758
+
+Train Losses: {'total': np.float64(1.0228040587334406), 'contrastive': np.float64(1.4232146512894404), 'archetype': np.float64(0.08728490486031487)}
+Val Losses: {'total': 1.871976637840271, 'contrastive': 2.6366392612457275, 'archetype': 0.08572659641504288}
+
+============================================================
+Epoch 8/15
+============================================================
+Epoch 7, Batch 0/21: Loss=0.5790, Contrastive=0.7808, Archetype=0.1107
+Epoch 7, Batch 10/21: Loss=0.6244, Contrastive=0.8580, Archetype=0.0706
+Epoch 7, Batch 20/21: Loss=0.7336, Contrastive=1.0096, Archetype=0.0905
+
+Train Losses: {'total': np.float64(0.8238952784311204), 'contrastive': np.float64(1.1398328088578724), 'archetype': np.float64(0.08402018160337493)}
+Val Losses: {'total': 1.8644750595092774, 'contrastive': 2.624243068695068, 'archetype': 0.09084266573190689}
+
+============================================================
+Epoch 9/15
+============================================================
+Epoch 8, Batch 0/21: Loss=0.6111, Contrastive=0.8339, Archetype=0.0884
+Epoch 8, Batch 10/21: Loss=0.4907, Contrastive=0.6605, Archetype=0.0852
+Epoch 8, Batch 20/21: Loss=0.4048, Contrastive=0.5513, Archetype=0.0560
+
+Train Losses: {'total': np.float64(0.5912192137468428), 'contrastive': np.float64(0.8085792291732061), 'archetype': np.float64(0.08026122461472239)}
+Val Losses: {'total': 1.9807694911956788, 'contrastive': 2.7926080226898193, 'archetype': 0.08418871760368347}
+
+============================================================
+Epoch 10/15
+============================================================
+Epoch 9, Batch 0/21: Loss=0.4445, Contrastive=0.6032, Archetype=0.0663
+Epoch 9, Batch 10/21: Loss=0.4581, Contrastive=0.6132, Archetype=0.0914
+Epoch 9, Batch 20/21: Loss=0.4299, Contrastive=0.5663, Archetype=0.1072
+
+Train Losses: {'total': np.float64(0.4518390226931799), 'contrastive': np.float64(0.6090949915704273), 'archetype': np.float64(0.08172021788500604)}
+Val Losses: {'total': 2.037409782409668, 'contrastive': 2.873694324493408, 'archetype': 0.08349046930670738}
+Checkpoint saved to tuning_checkpoints/quantum_6qubit_depth2/checkpoint_epoch_10.pth
+
+============================================================
+Epoch 11/15
+============================================================
+Epoch 10, Batch 0/21: Loss=0.2962, Contrastive=0.3874, Archetype=0.0804
+Epoch 10, Batch 10/21: Loss=0.3694, Contrastive=0.5006, Archetype=0.0553
+Epoch 10, Batch 20/21: Loss=0.4083, Contrastive=0.5347, Archetype=0.1116
+
+Train Losses: {'total': np.float64(0.34608442939463113), 'contrastive': np.float64(0.4592830396833874), 'archetype': np.float64(0.07747629001027062)}
+Val Losses: {'total': 1.9985445261001586, 'contrastive': 2.8176899909973145, 'archetype': 0.08528448343276977}
+
+============================================================
+Epoch 12/15
+============================================================
+Epoch 11, Batch 0/21: Loss=0.2435, Contrastive=0.3162, Archetype=0.0650
+Epoch 11, Batch 10/21: Loss=0.2621, Contrastive=0.3357, Archetype=0.0816
+Epoch 11, Batch 20/21: Loss=0.2539, Contrastive=0.3330, Archetype=0.0580
+
+Train Losses: {'total': np.float64(0.30248449529920307), 'contrastive': np.float64(0.3971270436332339), 'archetype': np.float64(0.07769345527603513)}
+Val Losses: {'total': 1.9190598249435424, 'contrastive': 2.7068058967590334, 'archetype': 0.07705061510205269}
+
+============================================================
+Epoch 13/15
+============================================================
+Epoch 12, Batch 0/21: Loss=0.1488, Contrastive=0.1799, Archetype=0.0683
+Epoch 12, Batch 10/21: Loss=0.2388, Contrastive=0.3087, Archetype=0.0693
+Epoch 12, Batch 20/21: Loss=0.1793, Contrastive=0.2241, Archetype=0.0738
+
+Train Losses: {'total': np.float64(0.25303253744329723), 'contrastive': np.float64(0.32770773626509164), 'archetype': np.float64(0.07401916473394349)}
+Val Losses: {'total': 2.072442889213562, 'contrastive': 2.923938846588135, 'archetype': 0.08326288014650345}
+
+============================================================
+Epoch 14/15
+============================================================
+Epoch 13, Batch 0/21: Loss=0.2634, Contrastive=0.3378, Archetype=0.0884
+Epoch 13, Batch 10/21: Loss=0.1942, Contrastive=0.2387, Archetype=0.0785
+Epoch 13, Batch 20/21: Loss=0.1464, Contrastive=0.1798, Archetype=0.0650
+
+Train Losses: {'total': np.float64(0.2315931816895803), 'contrastive': np.float64(0.2983273956037703), 'archetype': np.float64(0.06982690770001639)}
+Val Losses: {'total': 2.2022595167160035, 'contrastive': 3.1117600440979003, 'archetype': 0.07652398198843002}
+
+============================================================
+Epoch 15/15
+============================================================
+Epoch 14, Batch 0/21: Loss=0.1865, Contrastive=0.2299, Archetype=0.0828
+Epoch 14, Batch 10/21: Loss=0.1282, Contrastive=0.1402, Archetype=0.0989
+Epoch 14, Batch 20/21: Loss=0.1995, Contrastive=0.2563, Archetype=0.0617
+
+Train Losses: {'total': np.float64(0.19386113647903716), 'contrastive': np.float64(0.24428847361178624), 'archetype': np.float64(0.07134739291809854)}
+Val Losses: {'total': 2.131479048728943, 'contrastive': 3.0096179962158205, 'archetype': 0.07986879125237464}
+
+============================================================
+Training complete!
+============================================================
+Checkpoint saved to tuning_checkpoints/quantum_6qubit_depth2/final_model.pth
+Training history plot saved to tuning_checkpoints/quantum_6qubit_depth2/training_history.png
+✓ Results saved to tuning_results/quantum_6qubit_depth2_20251127_161344.json
+
+======================================================================
+Training Summary: quantum_6qubit_depth2
+======================================================================
+Status: ✓ Success
+Training time: 34.05 minutes
+======================================================================
+
+
+################################################################################
+Configuration 6/7
+################################################################################
+
+
+======================================================================
+Configuration: quantum_8qubit_depth1
+======================================================================
+  Embedding dim: 768
+  Architecture: resnet
+  Batch size: 16
+  Learning rate: 0.0001
+  Epochs: 15
+  Quantum attention: True
+  N qubits: 8
+  Circuit depth: 1
+  Dropout rate: 0.3
+  Noise strength: 0.05
+======================================================================
+
+Initializing model...
+Loading text encoder: sentence-transformers/all-MiniLM-L6-v2
+Model parameters: 37,804,309
+Creating training pipeline...
+Training pipeline initialized:
+  Training samples: 333
+  Validation samples: 71
+  Batch size: 16
+  Total epochs: 15
+  Steps per epoch: 21
+Starting training...
+
+============================================================
+Epoch 1/15
+============================================================
+Epoch 0, Batch 0/21: Loss=2.0045, Contrastive=2.8088, Archetype=0.1341
+Epoch 0, Batch 10/21: Loss=2.0254, Contrastive=2.8542, Archetype=0.0937
+Epoch 0, Batch 20/21: Loss=1.7593, Contrastive=2.4815, Archetype=0.0756
+
+Train Losses: {'total': np.float64(1.9759103173301333), 'contrastive': np.float64(2.7785894530160085), 'archetype': np.float64(0.10662228365739186)}
+Val Losses: {'total': 1.866075611114502, 'contrastive': 2.626878499984741, 'archetype': 0.0887739285826683}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth1/best_model.pth
+✓ Best model saved (val_loss: 1.8661)
+
+============================================================
+Epoch 2/15
+============================================================
+Epoch 1, Batch 0/21: Loss=1.9902, Contrastive=2.7872, Archetype=0.1363
+Epoch 1, Batch 10/21: Loss=1.9017, Contrastive=2.6744, Archetype=0.1015
+Epoch 1, Batch 20/21: Loss=1.7174, Contrastive=2.4162, Archetype=0.0919
+
+Train Losses: {'total': np.float64(1.9162765741348267), 'contrastive': np.float64(2.6943089848472956), 'archetype': np.float64(0.10470490441435859)}
+Val Losses: {'total': 1.8103673219680787, 'contrastive': 2.548277997970581, 'archetype': 0.08651156276464463}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth1/best_model.pth
+✓ Best model saved (val_loss: 1.8104)
+
+============================================================
+Epoch 3/15
+============================================================
+Epoch 2, Batch 0/21: Loss=1.8403, Contrastive=2.5775, Archetype=0.1216
+Epoch 2, Batch 10/21: Loss=1.8155, Contrastive=2.5501, Archetype=0.1038
+Epoch 2, Batch 20/21: Loss=1.6230, Contrastive=2.2682, Archetype=0.1203
+
+Train Losses: {'total': np.float64(1.832079876036871), 'contrastive': np.float64(2.5745955421811058), 'archetype': np.float64(0.10371927455777213)}
+Val Losses: {'total': 1.83643479347229, 'contrastive': 2.5859347343444825, 'archetype': 0.08593371659517288}
+
+============================================================
+Epoch 4/15
+============================================================
+Epoch 3, Batch 0/21: Loss=1.6553, Contrastive=2.3270, Archetype=0.0940
+Epoch 3, Batch 10/21: Loss=1.7124, Contrastive=2.4083, Archetype=0.0853
+Epoch 3, Batch 20/21: Loss=1.5990, Contrastive=2.2479, Archetype=0.0878
+
+Train Losses: {'total': np.float64(1.722300302414667), 'contrastive': np.float64(2.4201249168032692), 'archetype': np.float64(0.09669496438332967)}
+Val Losses: {'total': 1.7899077177047729, 'contrastive': 2.5199323177337645, 'archetype': 0.08517113476991653}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth1/best_model.pth
+✓ Best model saved (val_loss: 1.7899)
+
+============================================================
+Epoch 5/15
+============================================================
+Epoch 4, Batch 0/21: Loss=1.5461, Contrastive=2.1695, Archetype=0.0966
+Epoch 4, Batch 10/21: Loss=1.6387, Contrastive=2.2919, Archetype=0.1162
+Epoch 4, Batch 20/21: Loss=1.4581, Contrastive=2.0467, Archetype=0.0809
+
+Train Losses: {'total': np.float64(1.6250598487399874), 'contrastive': np.float64(2.2813316015970138), 'archetype': np.float64(0.09694623344001316)}
+Val Losses: {'total': 1.8854956150054931, 'contrastive': 2.6560577869415285, 'archetype': 0.08720566779375076}
+
+============================================================
+Epoch 6/15
+============================================================
+Epoch 5, Batch 0/21: Loss=1.5486, Contrastive=2.1675, Archetype=0.1094
+Epoch 5, Batch 10/21: Loss=1.3735, Contrastive=1.9302, Archetype=0.0781
+Epoch 5, Batch 20/21: Loss=1.3075, Contrastive=1.8309, Archetype=0.0880
+
+Train Losses: {'total': np.float64(1.4955307358787173), 'contrastive': np.float64(2.096933853058588), 'archetype': np.float64(0.0949772692152432)}
+Val Losses: {'total': 1.7641227960586547, 'contrastive': 2.4811340808868407, 'archetype': 0.09270246177911759}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth1/best_model.pth
+✓ Best model saved (val_loss: 1.7641)
+
+============================================================
+Epoch 7/15
+============================================================
+Epoch 6, Batch 0/21: Loss=1.3006, Contrastive=1.8226, Archetype=0.0832
+Epoch 6, Batch 10/21: Loss=1.1776, Contrastive=1.6503, Archetype=0.0790
+Epoch 6, Batch 20/21: Loss=1.2524, Contrastive=1.7563, Archetype=0.0759
+
+Train Losses: {'total': np.float64(1.2395290987832206), 'contrastive': np.float64(1.7319376809256417), 'archetype': np.float64(0.09241586107583273)}
+Val Losses: {'total': 1.8421629905700683, 'contrastive': 2.5920481204986574, 'archetype': 0.0942917987704277}
+
+============================================================
+Epoch 8/15
+============================================================
+Epoch 7, Batch 0/21: Loss=0.8115, Contrastive=1.1190, Archetype=0.0956
+Epoch 7, Batch 10/21: Loss=1.0039, Contrastive=1.3969, Archetype=0.0917
+Epoch 7, Batch 20/21: Loss=1.1057, Contrastive=1.5429, Archetype=0.0844
+
+Train Losses: {'total': np.float64(1.0012772253581457), 'contrastive': np.float64(1.3925617025012063), 'archetype': np.float64(0.08775445073843002)}
+Val Losses: {'total': 1.7534528255462647, 'contrastive': 2.4679035902023316, 'archetype': 0.08459269404411315}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth1/best_model.pth
+✓ Best model saved (val_loss: 1.7535)
+
+============================================================
+Epoch 9/15
+============================================================
+Epoch 8, Batch 0/21: Loss=0.7033, Contrastive=0.9670, Archetype=0.0838
+Epoch 8, Batch 10/21: Loss=0.7748, Contrastive=1.0728, Archetype=0.0779
+Epoch 8, Batch 20/21: Loss=1.0285, Contrastive=1.4314, Archetype=0.0937
+
+Train Losses: {'total': np.float64(0.7923620513507298), 'contrastive': np.float64(1.0942470857075282), 'archetype': np.float64(0.08658408834820702)}
+Val Losses: {'total': 1.9258357048034669, 'contrastive': 2.7131322383880616, 'archetype': 0.0879126876592636}
+
+============================================================
+Epoch 10/15
+============================================================
+Epoch 9, Batch 0/21: Loss=0.5795, Contrastive=0.8034, Archetype=0.0482
+Epoch 9, Batch 10/21: Loss=0.5383, Contrastive=0.7286, Archetype=0.0881
+Epoch 9, Batch 20/21: Loss=0.3584, Contrastive=0.4753, Archetype=0.0892
+
+Train Losses: {'total': np.float64(0.5445689857006073), 'contrastive': np.float64(0.7405767682052794), 'archetype': np.float64(0.0851038202998184)}
+Val Losses: {'total': 2.007003331184387, 'contrastive': 2.8287131786346436, 'archetype': 0.08896412104368209}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth1/checkpoint_epoch_10.pth
+
+============================================================
+Epoch 11/15
+============================================================
+Epoch 10, Batch 0/21: Loss=0.4599, Contrastive=0.6171, Archetype=0.0924
+Epoch 10, Batch 10/21: Loss=0.2783, Contrastive=0.3671, Archetype=0.0654
+Epoch 10, Batch 20/21: Loss=0.4489, Contrastive=0.6050, Archetype=0.0825
+
+Train Losses: {'total': np.float64(0.4492548377740951), 'contrastive': np.float64(0.6059034239678156), 'archetype': np.float64(0.08010643738366309)}
+Val Losses: {'total': 2.206335258483887, 'contrastive': 3.1144376754760743, 'archetype': 0.08561427146196365}
+
+============================================================
+Epoch 12/15
+============================================================
+Epoch 11, Batch 0/21: Loss=0.4431, Contrastive=0.5921, Archetype=0.1018
+Epoch 11, Batch 10/21: Loss=0.4116, Contrastive=0.5490, Archetype=0.0847
+Epoch 11, Batch 20/21: Loss=0.3995, Contrastive=0.5367, Archetype=0.0705
+
+Train Losses: {'total': np.float64(0.3346892318555287), 'contrastive': np.float64(0.44256546951475595), 'archetype': np.float64(0.0792449132672378)}
+Val Losses: {'total': 2.2175111770629883, 'contrastive': 3.1316362380981446, 'archetype': 0.08167660534381867}
+
+============================================================
+Epoch 13/15
+============================================================
+Epoch 12, Batch 0/21: Loss=0.2631, Contrastive=0.3336, Archetype=0.0923
+Epoch 12, Batch 10/21: Loss=0.2825, Contrastive=0.3647, Archetype=0.0848
+Epoch 12, Batch 20/21: Loss=0.1749, Contrastive=0.2243, Archetype=0.0566
+
+Train Losses: {'total': np.float64(0.28391411829562413), 'contrastive': np.float64(0.37176460666315897), 'archetype': np.float64(0.07381856051229295)}
+Val Losses: {'total': 2.0483261346817017, 'contrastive': 2.890183162689209, 'archetype': 0.08158148378133774}
+
+============================================================
+Epoch 14/15
+============================================================
+Epoch 13, Batch 0/21: Loss=0.2438, Contrastive=0.3060, Archetype=0.0920
+Epoch 13, Batch 10/21: Loss=0.3464, Contrastive=0.4659, Archetype=0.0606
+Epoch 13, Batch 20/21: Loss=0.2431, Contrastive=0.3102, Archetype=0.0839
+
+Train Losses: {'total': np.float64(0.2549773795264108), 'contrastive': np.float64(0.3305652943395433), 'archetype': np.float64(0.07385236840872537)}
+Val Losses: {'total': 2.0598306179046633, 'contrastive': 2.905124044418335, 'archetype': 0.087059286236763}
+
+============================================================
+Epoch 15/15
+============================================================
+Epoch 14, Batch 0/21: Loss=0.2037, Contrastive=0.2589, Archetype=0.0689
+Epoch 14, Batch 10/21: Loss=0.2591, Contrastive=0.3316, Archetype=0.0861
+Epoch 14, Batch 20/21: Loss=0.1503, Contrastive=0.1947, Archetype=0.0398
+
+Train Losses: {'total': np.float64(0.192730351572945), 'contrastive': np.float64(0.2425185222001303), 'archetype': np.float64(0.07146896049380302)}
+Val Losses: {'total': 2.2902288675308227, 'contrastive': 3.2325873374938965, 'archetype': 0.09252173155546188}
+
+============================================================
+Training complete!
+============================================================
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth1/final_model.pth
+Training history plot saved to tuning_checkpoints/quantum_8qubit_depth1/training_history.png
+✓ Results saved to tuning_results/quantum_8qubit_depth1_20251127_164916.json
+
+======================================================================
+Training Summary: quantum_8qubit_depth1
+======================================================================
+Status: ✓ Success
+Training time: 35.50 minutes
+======================================================================
+
+
+################################################################################
+Configuration 7/7
+################################################################################
+
+
+======================================================================
+Configuration: quantum_8qubit_depth3_high_reg
+======================================================================
+  Embedding dim: 768
+  Architecture: resnet
+  Batch size: 16
+  Learning rate: 5e-05
+  Epochs: 15
+  Quantum attention: True
+  N qubits: 8
+  Circuit depth: 3
+  Dropout rate: 0.4
+  Noise strength: 0.15
+======================================================================
+
+Initializing model...
+Loading text encoder: sentence-transformers/all-MiniLM-L6-v2
+Model parameters: 37,804,309
+Creating training pipeline...
+Training pipeline initialized:
+  Training samples: 333
+  Validation samples: 71
+  Batch size: 16
+  Total epochs: 15
+  Steps per epoch: 21
+Starting training...
+
+============================================================
+Epoch 1/15
+============================================================
+Epoch 0, Batch 0/21: Loss=1.9766, Contrastive=2.7747, Archetype=0.1159
+Epoch 0, Batch 10/21: Loss=2.0261, Contrastive=2.8493, Archetype=0.1110
+Epoch 0, Batch 20/21: Loss=1.8209, Contrastive=2.5643, Archetype=0.0870
+
+Train Losses: {'total': np.float64(1.9771613961174375), 'contrastive': np.float64(2.7819936389014837), 'archetype': np.float64(0.101143445287432)}
+Val Losses: {'total': 1.8606566667556763, 'contrastive': 2.616966152191162, 'archetype': 0.09644082337617874}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/best_model.pth
+✓ Best model saved (val_loss: 1.8607)
+
+============================================================
+Epoch 2/15
+============================================================
+Epoch 1, Batch 0/21: Loss=1.9748, Contrastive=2.7703, Archetype=0.1210
+Epoch 1, Batch 10/21: Loss=1.9741, Contrastive=2.7865, Archetype=0.0806
+Epoch 1, Batch 20/21: Loss=1.7942, Contrastive=2.5075, Archetype=0.1320
+
+Train Losses: {'total': np.float64(1.9435423839659918), 'contrastive': np.float64(2.7330684321267262), 'archetype': np.float64(0.10481901999030795)}
+Val Losses: {'total': 1.837654137611389, 'contrastive': 2.5844542026519775, 'archetype': 0.09596200585365296}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/best_model.pth
+✓ Best model saved (val_loss: 1.8377)
+
+============================================================
+Epoch 3/15
+============================================================
+Epoch 2, Batch 0/21: Loss=1.8989, Contrastive=2.6632, Archetype=0.1153
+Epoch 2, Batch 10/21: Loss=1.8418, Contrastive=2.5940, Archetype=0.0904
+Epoch 2, Batch 20/21: Loss=1.7775, Contrastive=2.4979, Archetype=0.1007
+
+Train Losses: {'total': np.float64(1.896312021073841), 'contrastive': np.float64(2.6658477783203125), 'archetype': np.float64(0.10477513145832788)}
+Val Losses: {'total': 1.8092673540115356, 'contrastive': 2.5447283506393434, 'archetype': 0.09362328946590423}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/best_model.pth
+✓ Best model saved (val_loss: 1.8093)
+
+============================================================
+Epoch 4/15
+============================================================
+Epoch 3, Batch 0/21: Loss=1.8529, Contrastive=2.5964, Archetype=0.1216
+Epoch 3, Batch 10/21: Loss=1.8200, Contrastive=2.5673, Archetype=0.0759
+Epoch 3, Batch 20/21: Loss=1.6381, Contrastive=2.2888, Archetype=0.1231
+
+Train Losses: {'total': np.float64(1.8208152396338326), 'contrastive': np.float64(2.558906294050671), 'archetype': np.float64(0.1019710735196159)}
+Val Losses: {'total': 1.772727942466736, 'contrastive': 2.4927002429962157, 'archetype': 0.09339168965816498}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/best_model.pth
+✓ Best model saved (val_loss: 1.7727)
+
+============================================================
+Epoch 5/15
+============================================================
+Epoch 4, Batch 0/21: Loss=1.7241, Contrastive=2.4115, Archetype=0.1237
+Epoch 4, Batch 10/21: Loss=1.7337, Contrastive=2.4425, Archetype=0.0737
+Epoch 4, Batch 20/21: Loss=1.5556, Contrastive=2.1797, Archetype=0.1024
+
+Train Losses: {'total': np.float64(1.7205260367620558), 'contrastive': np.float64(2.4172999404725575), 'archetype': np.float64(0.09654391947246733)}
+Val Losses: {'total': 1.7229905366897582, 'contrastive': 2.423319911956787, 'archetype': 0.0876149594783783}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/best_model.pth
+✓ Best model saved (val_loss: 1.7230)
+
+============================================================
+Epoch 6/15
+============================================================
+Epoch 5, Batch 0/21: Loss=1.5647, Contrastive=2.1927, Archetype=0.1020
+Epoch 5, Batch 10/21: Loss=1.5636, Contrastive=2.1871, Archetype=0.1094
+Epoch 5, Batch 20/21: Loss=1.4153, Contrastive=1.9870, Archetype=0.0797
+
+Train Losses: {'total': np.float64(1.5930097273417883), 'contrastive': np.float64(2.23640707560948), 'archetype': np.float64(0.09219851699613389)}
+Val Losses: {'total': 1.7562286376953125, 'contrastive': 2.4714106559753417, 'archetype': 0.0854809895157814}
+
+============================================================
+Epoch 7/15
+============================================================
+Epoch 6, Batch 0/21: Loss=1.4910, Contrastive=2.0897, Archetype=0.0938
+Epoch 6, Batch 10/21: Loss=1.4657, Contrastive=2.0507, Archetype=0.1059
+Epoch 6, Batch 20/21: Loss=1.3313, Contrastive=1.8517, Archetype=0.1233
+
+Train Losses: {'total': np.float64(1.4386066425414312), 'contrastive': np.float64(2.0150810536884127), 'archetype': np.float64(0.09460925913992382)}
+Val Losses: {'total': 1.7567270517349243, 'contrastive': 2.4733330726623537, 'archetype': 0.08089002519845963}
+
+============================================================
+Epoch 8/15
+============================================================
+Epoch 7, Batch 0/21: Loss=1.1642, Contrastive=1.6331, Archetype=0.0642
+Epoch 7, Batch 10/21: Loss=1.4274, Contrastive=1.9922, Archetype=0.1107
+Epoch 7, Batch 20/21: Loss=1.0376, Contrastive=1.4504, Archetype=0.0758
+
+Train Losses: {'total': np.float64(1.204073891753242), 'contrastive': np.float64(1.679719538915725), 'archetype': np.float64(0.09513007459186372)}
+Val Losses: {'total': 1.7025506019592285, 'contrastive': 2.395536184310913, 'archetype': 0.08161563724279404}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/best_model.pth
+✓ Best model saved (val_loss: 1.7026)
+
+============================================================
+Epoch 9/15
+============================================================
+Epoch 8, Batch 0/21: Loss=1.1567, Contrastive=1.6133, Archetype=0.0915
+Epoch 8, Batch 10/21: Loss=1.0075, Contrastive=1.4005, Archetype=0.0880
+Epoch 8, Batch 20/21: Loss=0.9443, Contrastive=1.3094, Archetype=0.0896
+
+Train Losses: {'total': np.float64(0.9833842601094928), 'contrastive': np.float64(1.365444262822469), 'archetype': np.float64(0.0907094521181924)}
+Val Losses: {'total': 1.7662673473358155, 'contrastive': 2.4845347881317137, 'archetype': 0.08832096606492996}
+
+============================================================
+Epoch 10/15
+============================================================
+Epoch 9, Batch 0/21: Loss=0.7988, Contrastive=1.1007, Archetype=0.0927
+Epoch 9, Batch 10/21: Loss=0.9565, Contrastive=1.3370, Archetype=0.0673
+Epoch 9, Batch 20/21: Loss=0.8081, Contrastive=1.1127, Archetype=0.0931
+
+Train Losses: {'total': np.float64(0.8162498133523124), 'contrastive': np.float64(1.127244478180295), 'archetype': np.float64(0.08868596614116714)}
+Val Losses: {'total': 1.8816712379455567, 'contrastive': 2.650730586051941, 'archetype': 0.0838916227221489}
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/checkpoint_epoch_10.pth
+
+============================================================
+Epoch 11/15
+============================================================
+Epoch 10, Batch 0/21: Loss=0.7762, Contrastive=1.0818, Archetype=0.0594
+Epoch 10, Batch 10/21: Loss=0.6120, Contrastive=0.8385, Archetype=0.0816
+Epoch 10, Batch 20/21: Loss=0.7657, Contrastive=1.0631, Archetype=0.0730
+
+Train Losses: {'total': np.float64(0.6311965045474824), 'contrastive': np.float64(0.8626669985907418), 'archetype': np.float64(0.08976811401191212)}
+Val Losses: {'total': 1.9304261207580566, 'contrastive': 2.7184449195861817, 'archetype': 0.09051995426416397}
+
+============================================================
+Epoch 12/15
+============================================================
+Epoch 11, Batch 0/21: Loss=0.7367, Contrastive=1.0181, Archetype=0.0729
+Epoch 11, Batch 10/21: Loss=0.3570, Contrastive=0.4719, Archetype=0.0849
+Epoch 11, Batch 20/21: Loss=0.4968, Contrastive=0.6732, Archetype=0.0835
+
+Train Losses: {'total': np.float64(0.4834339576108115), 'contrastive': np.float64(0.6523329516251882), 'archetype': np.float64(0.08716074661129997)}
+Val Losses: {'total': 1.9757960319519043, 'contrastive': 2.7850841522216796, 'archetype': 0.0842555969953537}
+
+============================================================
+Epoch 13/15
+============================================================
+Epoch 12, Batch 0/21: Loss=0.3711, Contrastive=0.4866, Archetype=0.1003
+Epoch 12, Batch 10/21: Loss=0.5489, Contrastive=0.7500, Archetype=0.0774
+Epoch 12, Batch 20/21: Loss=0.4329, Contrastive=0.5810, Archetype=0.0875
+
+Train Losses: {'total': np.float64(0.4551196637607756), 'contrastive': np.float64(0.6118871697357723), 'archetype': np.float64(0.08721997305041268)}
+Val Losses: {'total': 2.0035728454589843, 'contrastive': 2.8230169773101808, 'archetype': 0.09035885632038117}
+
+============================================================
+Epoch 14/15
+============================================================
+Epoch 13, Batch 0/21: Loss=0.3348, Contrastive=0.4447, Archetype=0.0768
+Epoch 13, Batch 10/21: Loss=0.5863, Contrastive=0.7989, Archetype=0.0862
+Epoch 13, Batch 20/21: Loss=0.2185, Contrastive=0.2684, Archetype=0.1055
+
+Train Losses: {'total': np.float64(0.36707159947781337), 'contrastive': np.float64(0.487065179007394), 'archetype': np.float64(0.08392766224486488)}
+Val Losses: {'total': 2.0123430252075196, 'contrastive': 2.8376327991485595, 'archetype': 0.08325238376855851}
+
+============================================================
+Epoch 15/15
+============================================================
+Epoch 14, Batch 0/21: Loss=0.2851, Contrastive=0.3715, Archetype=0.0776
+Epoch 14, Batch 10/21: Loss=0.2533, Contrastive=0.3290, Archetype=0.0772
+Epoch 14, Batch 20/21: Loss=0.2707, Contrastive=0.3492, Archetype=0.0843
+
+Train Losses: {'total': np.float64(0.31882089092617943), 'contrastive': np.float64(0.4183477745169685), 'archetype': np.float64(0.08327521596636091)}
+Val Losses: {'total': 2.0011611938476563, 'contrastive': 2.8217630863189695, 'archetype': 0.08295018970966339}
+
+============================================================
+Training complete!
+============================================================
+Checkpoint saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/final_model.pth
+Training history plot saved to tuning_checkpoints/quantum_8qubit_depth3_high_reg/training_history.png
+✓ Results saved to tuning_results/quantum_8qubit_depth3_high_reg_20251127_172540.json
+
+======================================================================
+Training Summary: quantum_8qubit_depth3_high_reg
+======================================================================
+Status: ✓ Success
+Training time: 36.37 minutes
+======================================================================
+
+
+================================================================================
+HYPERPARAMETER SEARCH COMPLETE
+================================================================================
