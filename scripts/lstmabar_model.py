@@ -36,6 +36,10 @@ class LSTMABAR(nn.Module):
         num_archetypes=5,
         sample_rate=44100,
         use_quantum_attention=False,
+        n_qubits=8,
+        circuit_depth=2,
+        dropout_rate=0.3,
+        noise_strength=0.1,
         temperature=0.07,
         device='cpu'
     ):
@@ -51,6 +55,10 @@ class LSTMABAR(nn.Module):
             model_name=text_model,
             embedding_dim=embedding_dim,
             use_quantum_attention=use_quantum_attention,
+            n_qubits=n_qubits,
+            circuit_depth=circuit_depth,
+            dropout_rate=dropout_rate,
+            noise_strength=noise_strength,
             device=device
         )
         
