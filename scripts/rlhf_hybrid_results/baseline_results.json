@@ -1,0 +1,209 @@
+{
+  "metrics": {
+    "avg_mse": 0.10486326526756272,
+    "avg_cosine_similarity": 0.5827470504404716,
+    "archetype_accuracy": 31.506849315068493
+  },
+  "detailed_results": [
+    {
+      "description": "The low quality recording features a live performance that consists of an acoustic flamenco guitar melody. The recording is very noisy and buzzy, but you can still hear the passion and the emotion.",
+      "predicted_archetypes": [
+        0.2007923424243927,
+        0.1089789941906929,
+        0.2386622428894043,
+        0.21215610206127167,
+        0.2394103705883026
+      ],
+      "target_archetypes": [
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.5
+      ],
+      "archetype_mse": 0.07261836490803125,
+      "cosine_similarity": 0.5356905691861095,
+      "archetype_correct": 0
+    },
+    {
+      "description": "A male vocalist sings this lively melody in a foreign language. The tempo is fast with a loud and banjo harmony, tambourine beats and tapping beats. The song is a spirited, cheerful,celebratory, happy, enthusiastic and festive Regional/Folk Song.",
+      "predicted_archetypes": [
+        0.06112954765558243,
+        0.13301612436771393,
+        0.35784223675727844,
+        0.20572137832641602,
+        0.24229073524475098
+      ],
+      "target_archetypes": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "archetype_mse": 0.10696455794344817,
+      "cosine_similarity": 0.714959494422691,
+      "archetype_correct": 1
+    },
+    {
+      "description": "This song contains several instruments playing the same melody. Violins; flutes, and tin whistles. An acoustic guitar is strumming chords along and a percussive instrument is playing along with the acoustic guitar. In the background you can hear people talking. This song may be playing in an Irish bar.",
+      "predicted_archetypes": [
+        0.19405539333820343,
+        0.0879984050989151,
+        0.2105283886194229,
+        0.3257448077201843,
+        0.18167297542095184
+      ],
+      "target_archetypes": [
+        0.5,
+        0.0,
+        0.0,
+        0.5,
+        0.0
+      ],
+      "archetype_mse": 0.04180759321897245,
+      "cosine_similarity": 0.7683466269667393,
+      "archetype_correct": 0
+    },
+    {
+      "description": "The low quality recording features a live performance of a rock & roll song performed by passionate female vocal and male vocal ad libs, followed by groovy piano melody, funky electric guitar melody, groovy bass guitar, shimmering hi hats, punchy snare and soft kick hits. It is a bit noisy and there are some subtle microphone feedback sounds in the middle of the performance. It sounds energetic, vintage and passionate.",
+      "predicted_archetypes": [
+        0.044674068689346313,
+        0.18677818775177002,
+        0.40576890110969543,
+        0.1272638440132141,
+        0.23551498353481293
+      ],
+      "target_archetypes": [
+        0.358974358974359,
+        0.0,
+        0.38461538461538464,
+        0.0,
+        0.25641025641025644
+      ],
+      "archetype_mse": 0.030150186714942538,
+      "cosine_similarity": 0.7600027746867847,
+      "archetype_correct": 1
+    },
+    {
+      "description": "The low quality recording features a manically played piano melody over punchy kick and snare hits, followed by uptempo hi hats and shimmering open hats. It sounds aggressive, mani and thin, as it lacks low frequencies.",
+      "predicted_archetypes": [
+        0.06268544495105743,
+        0.12290035933256149,
+        0.3578717112541199,
+        0.2273535430431366,
+        0.2291889786720276
+      ],
+      "target_archetypes": [
+        0.0,
+        0.0,
+        0.7837837837837838,
+        0.21621621621621623,
+        0.0
+      ],
+      "archetype_mse": 0.05061733697057504,
+      "cosine_similarity": 0.808753436390827,
+      "archetype_correct": 1
+    },
+    {
+      "description": "This song features male voices singing in harmony. It starts off on a high note, followed by a lower note and back up to a high note. At the end, a vocoder is used to give a start-stop effect to the voice. The ending of the voice is like if a person were to drive over road ramblers. There is a lot of reverb added to the voice.",
+      "predicted_archetypes": [
+        0.08082933723926544,
+        0.12541472911834717,
+        0.2990943491458893,
+        0.2614676356315613,
+        0.23319396376609802
+      ],
+      "target_archetypes": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "archetype_mse": 0.006892881797721814,
+      "cosine_similarity": 0.9235842379807534,
+      "archetype_correct": 0
+    },
+    {
+      "description": "This is a Hindu music piece. There is a female vocalist singing at a medium-to-high pitch in a devotional manner. A sitar provides a melodic background. The tabla is being played in the rhythmic background. The atmosphere is spiritual. This piece could be played at religious events and online content related to Hindu religion.",
+      "predicted_archetypes": [
+        0.12319791316986084,
+        0.12903575599193573,
+        0.23083244264125824,
+        0.3907243609428406,
+        0.12620946764945984
+      ],
+      "target_archetypes": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "archetype_mse": 0.20146201966567565,
+      "cosine_similarity": 0.24458963979931583,
+      "archetype_correct": 0
+    },
+    {
+      "description": "A male voice is singing along to a blues/rock bassline and acoustic drums. A e-guitar and a banjo are playing the same melody as the bass. All the instruments are playing when the male voice is not singing. Then after fading out a new song starts with a percussive sound, an upright bass, piano and a female voice singing.This song may be playing in a bar.",
+      "predicted_archetypes": [
+        0.12062038481235504,
+        0.22880962491035461,
+        0.26401978731155396,
+        0.15975239872932434,
+        0.22679778933525085
+      ],
+      "target_archetypes": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "archetype_mse": 0.0027135283767060606,
+      "cosine_similarity": 0.9677144844492044,
+      "archetype_correct": 0
+    },
+    {
+      "description": "This is an acoustic indie rock piece. There is a male vocalist singing gently in the Thai language. An acoustic guitar plays the main tune while a bass guitar is in the background. There is a piano that starts out by supporting the melody, but then wanders towards off-key notes, creating an air of conflict. The atmosphere is melancholic. This piece can be used in the soundtrack of a drama movie/TV show that takes place in Thailand.",
+      "predicted_archetypes": [
+        0.24656502902507782,
+        0.157849982380867,
+        0.2397211343050003,
+        0.1577620655298233,
+        0.1981017142534256
+      ],
+      "target_archetypes": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "archetype_mse": 0.142836050633696,
+      "cosine_similarity": 0.5415280984659374,
+      "archetype_correct": 1
+    },
+    {
+      "description": "The song is an upbeat, soulful song which has a motif repeated on a woodwind instrument. The song would be suitable for some mellow dancing. The singer has a raspy voice.",
+      "predicted_archetypes": [
+        0.047197166830301285,
+        0.177590474486351,
+        0.44290050864219666,
+        0.14755311608314514,
+        0.18475879728794098
+      ],
+      "target_archetypes": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "archetype_mse": 0.23828804226422823,
+      "cosine_similarity": 0.08827923827982401,
+      "archetype_correct": 0
+    }
+  ]
+}

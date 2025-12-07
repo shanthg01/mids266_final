@@ -1,0 +1,42 @@
+filepath,text,weight_sine,weight_square,weight_sawtooth,weight_triangle,attack,decay,sustain,release,cutoff
+synthetic_timbre_dataset/synth_0000_pure.wav,clean tone,1.0,0.0,0.0,0.0,0.1,0.1,0.8,0.3,0.9
+synthetic_timbre_dataset/synth_0001_pure.wav,pure sine,1.0,0.0,0.0,0.0,0.1,0.1,0.8,0.3,0.9
+synthetic_timbre_dataset/synth_0002_pure.wav,simple tone,1.0,0.0,0.0,0.0,0.1,0.1,0.8,0.3,0.9
+synthetic_timbre_dataset/synth_0003_smooth.wav,smooth texture,0.9,0.0,0.0,0.1,0.2,0.2,0.7,0.3,0.8
+synthetic_timbre_dataset/synth_0004_smooth.wav,soft sound,0.9,0.0,0.0,0.1,0.2,0.2,0.7,0.3,0.8
+synthetic_timbre_dataset/synth_0005_smooth.wav,gentle tone,0.9,0.0,0.0,0.1,0.2,0.2,0.7,0.3,0.8
+synthetic_timbre_dataset/synth_0006_warm.wav,warm bass,0.6,0.0,0.0,0.4,0.2,0.3,0.6,0.4,0.6
+synthetic_timbre_dataset/synth_0007_warm.wav,warm pad,0.6,0.0,0.0,0.4,0.2,0.3,0.6,0.4,0.6
+synthetic_timbre_dataset/synth_0008_warm.wav,deep sound,0.6,0.0,0.0,0.4,0.2,0.3,0.6,0.4,0.6
+synthetic_timbre_dataset/synth_0009_mellow.wav,mellow tone,0.5,0.0,0.0,0.5,0.3,0.4,0.7,0.5,0.5
+synthetic_timbre_dataset/synth_0010_bright.wav,bright lead,0.0,0.0,0.8,0.2,0.05,0.2,0.6,0.2,0.9
+synthetic_timbre_dataset/synth_0011_bright.wav,sparkly tone,0.0,0.0,0.8,0.2,0.05,0.2,0.6,0.2,0.9
+synthetic_timbre_dataset/synth_0012_bright.wav,shimmering sound,0.0,0.0,0.8,0.2,0.05,0.2,0.6,0.2,0.9
+synthetic_timbre_dataset/synth_0013_sharp.wav,sharp attack,0.0,0.0,1.0,0.0,0.01,0.15,0.5,0.2,1.0
+synthetic_timbre_dataset/synth_0014_sharp.wav,cutting tone,0.0,0.0,1.0,0.0,0.01,0.15,0.5,0.2,1.0
+synthetic_timbre_dataset/synth_0015_sharp.wav,piercing lead,0.0,0.0,1.0,0.0,0.01,0.15,0.5,0.2,1.0
+synthetic_timbre_dataset/synth_0016_harsh.wav,harsh tone,0.0,0.5,0.5,0.0,0.05,0.1,0.7,0.2,0.9
+synthetic_timbre_dataset/synth_0017_plucky.wav,plucked string,0.3,0.0,0.5,0.2,0.01,0.2,0.3,0.1,0.7
+synthetic_timbre_dataset/synth_0018_plucky.wav,pizzicato,0.3,0.0,0.5,0.2,0.01,0.2,0.3,0.1,0.7
+synthetic_timbre_dataset/synth_0019_plucky.wav,short note,0.3,0.0,0.5,0.2,0.01,0.2,0.3,0.1,0.7
+synthetic_timbre_dataset/synth_0020_staccato.wav,staccato rhythm,0.4,0.3,0.3,0.0,0.02,0.15,0.4,0.1,0.8
+synthetic_timbre_dataset/synth_0021_staccato.wav,detached notes,0.4,0.3,0.3,0.0,0.02,0.15,0.4,0.1,0.8
+synthetic_timbre_dataset/synth_0022_staccato.wav,short bursts,0.4,0.3,0.3,0.0,0.02,0.15,0.4,0.1,0.8
+synthetic_timbre_dataset/synth_0023_airy.wav,airy pad,0.6,0.0,0.4,0.0,0.4,0.3,0.8,0.6,0.7
+synthetic_timbre_dataset/synth_0024_airy.wav,breath noise,0.6,0.0,0.4,0.0,0.4,0.3,0.8,0.6,0.7
+synthetic_timbre_dataset/synth_0025_airy.wav,whisper texture,0.6,0.0,0.4,0.0,0.4,0.3,0.8,0.6,0.7
+synthetic_timbre_dataset/synth_0026_hollow.wav,hollow clarinet,0.0,0.9,0.0,0.1,0.3,0.3,0.6,0.5,0.4
+synthetic_timbre_dataset/synth_0027_hollow.wav,woody sound,0.0,0.9,0.0,0.1,0.3,0.3,0.6,0.5,0.4
+synthetic_timbre_dataset/synth_0028_hollow.wav,clarinet tone,0.0,0.9,0.0,0.1,0.3,0.3,0.6,0.5,0.4
+synthetic_timbre_dataset/synth_0029_woody.wav,wooden percussion,0.0,0.7,0.0,0.3,0.2,0.3,0.7,0.4,0.5
+synthetic_timbre_dataset/synth_0030_woody.wav,marimba tone,0.0,0.7,0.0,0.3,0.2,0.3,0.7,0.4,0.5
+synthetic_timbre_dataset/synth_0031_woody.wav,xylophone,0.0,0.7,0.0,0.3,0.2,0.3,0.7,0.4,0.5
+synthetic_timbre_dataset/synth_0032_buzzy.wav,buzzy synth,0.0,0.2,0.8,0.0,0.1,0.2,0.6,0.3,0.9
+synthetic_timbre_dataset/synth_0033_buzzy.wav,digital fuzz,0.0,0.2,0.8,0.0,0.1,0.2,0.6,0.3,0.9
+synthetic_timbre_dataset/synth_0034_buzzy.wav,aggressive lead,0.0,0.2,0.8,0.0,0.1,0.2,0.6,0.3,0.9
+synthetic_timbre_dataset/synth_0035_gritty.wav,gritty texture,0.0,0.5,0.5,0.0,0.15,0.25,0.5,0.3,0.8
+synthetic_timbre_dataset/synth_0036_gritty.wav,lofi noise,0.0,0.5,0.5,0.0,0.15,0.25,0.5,0.3,0.8
+synthetic_timbre_dataset/synth_0037_gritty.wav,dirty sound,0.0,0.5,0.5,0.0,0.15,0.25,0.5,0.3,0.8
+synthetic_timbre_dataset/synth_0038_crunchy.wav,crunchy distortion,0.0,0.6,0.4,0.0,0.05,0.2,0.4,0.2,0.9
+synthetic_timbre_dataset/synth_0039_crunchy.wav,bit-crushed,0.0,0.6,0.4,0.0,0.05,0.2,0.4,0.2,0.9
+synthetic_timbre_dataset/synth_0040_crunchy.wav,digital artifacts,0.0,0.6,0.4,0.0,0.05,0.2,0.4,0.2,0.9
