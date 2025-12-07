@@ -1,0 +1,19 @@
+{
+  "mse": 0.06385979278454922,
+  "rmse": 0.2527049520380422,
+  "mae": 0.18010251036478125,
+  "cosine_similarity": 0.7474454958727219,
+  "cosine_similarity_std": 0.22202217784547004,
+  "top1_accuracy": 0.5667506297229219,
+  "top2_accuracy": 0.7770780856423174,
+  "sine_mse": 0.11311096618596776,
+  "square_mse": 0.05234294286687886,
+  "sawtooth_mse": 0.057226642982443364,
+  "triangle_mse": 0.054505516315776395,
+  "noise_mse": 0.04211289557167968,
+  "pearson_correlation": 0.5225285229116657,
+  "spearman_correlation": 0.45410360995954085,
+  "timestamp": "2025-12-06T23:27:54.808502",
+  "model_path": "tuning_checkpoints/mids266final_bestmodel/best_model.pth",
+  "test_samples": 794
+}
