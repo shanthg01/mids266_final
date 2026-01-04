@@ -1,4 +1,3 @@
-```markdown
 # Two-Tower Model Architecture: LSTMABAR (Language-to-Sound Transformation Model using Archetype-Based Audio Representation)
 
 ## 1. High-Level Overview
@@ -128,4 +127,3 @@ A **two-tower contrastive learning framework**—inspired by CLAP and MuLan—fo
 6. Transform input audio with DDSP engine under `w`
 7. Output transformed waveform.
 8. Collect feedback → update classifier (RLHF stage)
-```
