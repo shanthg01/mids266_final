@@ -1,5 +1,7 @@
 # Two-Tower Model Architecture: LSTMABAR (Language-to-Sound Transformation Model using Archetype-Based Audio Representation)
 
+*Contributions: project ideation, project outline, literature review, architecture design, text_tower, audio_tower, contrastive_alignment, ddsp_transformation, archetype_predictor, musiccaps_loader, model training and experimentation*
+
 ## 1. High-Level Overview
 
 The model transforms an input audio clip into a modified version consistent with a natural language description. It aligns **text semantics** with **audio timbral archetypes**, bridging subjective descriptors (“warm,” “crunchy”) and objective acoustic features (spectral centroid, harmonic ratio, MFCCs).
